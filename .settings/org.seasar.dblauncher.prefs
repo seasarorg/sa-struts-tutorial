@@ -1,0 +1,4 @@
+#Fri Nov 23 16:29:00 JST 2007
+baseDir=/sa-struts-tutorial/src/main/webapp/WEB-INF/classes/data
+eclipse.preferences.version=1
+initDB=/sa-struts-tutorial/src/main/resources/data

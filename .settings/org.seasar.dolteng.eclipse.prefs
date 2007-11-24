@@ -1,0 +1,8 @@
+#Fri Nov 23 16:28:59 JST 2007
+DaoType=S2Dao
+DefaultResourcePath=/sa-struts-tutorial/src/main/resources
+DefaultRootPackage=tutorial
+DefaultSrcPath=/sa-struts-tutorial/src/main/java
+ServletPath=/sa-struts-tutorial
+WebContentsRoot=src/main/webapp/
+eclipse.preferences.version=1
