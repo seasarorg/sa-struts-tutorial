@@ -9,6 +9,11 @@
 			<arg>"aop.traceInterceptor"</arg>
 			<arg>".*"</arg>
 		</initMethod>
+		<initMethod name="addCustomizer">
+			<arg>
+			    <component class="org.seasar.struts.customizer.ActionCustomizer"/>
+			</arg>
+		</initMethod>
 	</component>
 	
 	<component name="serviceCustomizer" class="org.seasar.framework.container.customizer.CustomizerChain">
