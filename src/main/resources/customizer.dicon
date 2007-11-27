@@ -7,7 +7,6 @@
 	<component name="actionCustomizer" class="org.seasar.framework.container.customizer.CustomizerChain">
 		<initMethod name="addAspectCustomizer">
 			<arg>"aop.traceInterceptor"</arg>
-			<arg>".*"</arg>
 		</initMethod>
 		<initMethod name="addCustomizer">
 			<arg>
@@ -19,7 +18,6 @@
 	<component name="serviceCustomizer" class="org.seasar.framework.container.customizer.CustomizerChain">
 		<initMethod name="addAspectCustomizer">
 			<arg>"aop.traceInterceptor"</arg>
-			<arg>".*"</arg>
 		</initMethod>
 		<initMethod name="addCustomizer">
 			<arg>
