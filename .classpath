@@ -35,5 +35,6 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-validator-1.1.4.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/commons-validator-1.1.4-src.zip"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/hsqldb-1.8.0.1.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/ognl-2.6.9-patch-20070908.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/standard.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/jakarta-taglibs-standard-1.1.2-src.zip"/>
 	<classpathentry kind="output" path="target/test-classes"/>
 </classpath>
