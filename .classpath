@@ -12,7 +12,6 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/aopalliance-1.0.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-collections-3.1.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/commons-collections-3.1-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-el-1.0.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/commons-el-1.0-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-fileupload-1.0.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-logging-1.1.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/geronimo-ejb_3.0_spec-1.0.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/geronimo-jta_1.1_spec-1.0.jar"/>
@@ -21,7 +20,6 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/jstl-1.1.2.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/log4j-1.2.13.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/log4j-1.2.13-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/poi-3.0-FINAL.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/sa-struts-ea1-SNAPSHOT.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/sa-struts-ea1-SNAPSHOT-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/geronimo-annotation_1.0_spec-1.0.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/geronimo-interceptor_3.0_spec-1.0.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/geronimo-jpa_3.0_spec-1.0.jar"/>
@@ -33,8 +31,10 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/hsqldb-1.8.0.1.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/ognl-2.6.9-patch-20070908.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/standard.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/jakarta-taglibs-standard-1.1.2-src.zip"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-extension-2.4.18-rc3.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-extension-2.4.18-rc3-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-framework-2.4.18-rc3.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-framework-2.4.18-rc3-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-tiger-2.4.18-rc3.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-tiger-2.4.18-rc3-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-fileupload-1.2.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/commons-fileupload-1.2-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-extension-2.4.18-rc4.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-extension-2.4.18-rc4-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-framework-2.4.18-rc4.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-framework-2.4.18-rc4-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-tiger-2.4.18-rc4.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-tiger-2.4.18-rc4-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/sa-struts-rc1-SNAPSHOT.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/sa-struts-rc1-SNAPSHOT-sources.jar"/>
 	<classpathentry kind="output" path="target/test-classes"/>
 </classpath>
