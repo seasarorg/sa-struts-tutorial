@@ -10,7 +10,7 @@
 <h1><c:out value="Hello ${name}!!!"/></h1>
 <br />
 <form action="bbb2.do" method="post">
-<input type="hidden" name="name" value="${name}"/>
+<input type="hidden" name="name" value="<c:out value='${name}'/>"/>
 <c:forEach items="${hogeList}" var="hoge" varStatus="s">
 <input type="text" name="hogeList[${s.index}].aaa"
   value="${hoge.aaa}"/>
