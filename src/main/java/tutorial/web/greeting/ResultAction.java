@@ -21,7 +21,8 @@ public class ResultAction {
 	public ActionMessages validateForExecute() {
 		ActionMessages errors = new ActionMessages();
 		if (StringUtil.isEmpty(name)) {
-			errors.add("name", new ActionMessage("errors.required", "name"));
+			errors.add("name", new ActionMessage("errors.required",
+					"labels.name"));
 		}
 		return errors;
 	}
