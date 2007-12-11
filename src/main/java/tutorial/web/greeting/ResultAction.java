@@ -13,16 +13,15 @@ public class ResultAction {
 
 	public String name;
 
-	@Execute
+	@Execute(validate = "validate")
 	public String execute() {
 		return "success";
 	}
 
-	public ActionMessages validateForExecute() {
+	public ActionMessages validate() {
 		ActionMessages errors = new ActionMessages();
 		if (StringUtil.isEmpty(name)) {
-			errors.add("name", new ActionMessage("errors.required",
-					"labels.name"));
+			errors.add("name", new ActionMessage("errors.required", "名前"));
 		}
 		return errors;
 	}
