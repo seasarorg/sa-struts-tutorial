@@ -35,7 +35,8 @@
 
 <!-- ================================ Message Resources Definitions -->
 
-    <message-resources parameter="application"/>
+    <message-resources parameter="application"
+        factory="org.seasar.struts.util.S2PropertyMessageResourcesFactory"/>
 
 <!-- ======================================= Plug Ins Configuration -->
 

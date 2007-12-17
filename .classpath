@@ -32,9 +32,9 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/ognl-2.6.9-patch-20070908.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/standard.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/jakarta-taglibs-standard-1.1.2-src.zip"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-fileupload-1.2.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/commons-fileupload-1.2-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-extension-2.4.18-rc4.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-extension-2.4.18-rc4-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-framework-2.4.18-rc4.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-framework-2.4.18-rc4-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-tiger-2.4.18-rc4.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-tiger-2.4.18-rc4-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/sa-struts-rc1-SNAPSHOT.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/sa-struts-rc1-SNAPSHOT-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-extension-2.4.18.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-extension-2.4.18-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-framework-2.4.18.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-framework-2.4.18-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-tiger-2.4.18.jar" sourcepath="src/main/webapp/WEB-INF/lib/sources/s2-tiger-2.4.18-sources.jar"/>
 	<classpathentry kind="output" path="target/test-classes"/>
 </classpath>
