@@ -10,7 +10,7 @@
 <html:errors/>
 <form action="result.do" method="post">
 <input type="text" name="name"
-  value="<c:out value='${name}'/>"/>
+  value="${name}"/>
 <input type="submit" value="submit"/>
 </form>
 </body>

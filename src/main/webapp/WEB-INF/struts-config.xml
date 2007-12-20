@@ -40,7 +40,7 @@
 
 <!-- ======================================= Plug Ins Configuration -->
 
-    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <plug-in className="org.seasar.struts.validator.S2ValidatorPlugIn">
         <set-property
           property="pathnames"
           value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
