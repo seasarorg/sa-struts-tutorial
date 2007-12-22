@@ -11,6 +11,8 @@
 <form action="result.do" method="post">
 <input type="text" name="name"
   value="${name}"/>
+<input type="text" name="name2"
+  value="${name2}"/>
 <input type="submit" value="submit"/>
 </form>
 </body>

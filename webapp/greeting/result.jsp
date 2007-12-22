@@ -6,6 +6,7 @@
 <title>Greeting result</title>
 </head>
 <body>
-Hello <c:out value="${name}"/>!!!
+Hello <c:out value="${name}"/>!!!<br />
+Hello <c:out value="${name2}"/>!!!
 </body>
 </html>
