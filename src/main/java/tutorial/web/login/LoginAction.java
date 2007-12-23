@@ -1,10 +1,10 @@
-package tutorial.web.greeting;
+package tutorial.web.login;
 
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.Result;
 
-@Result(path = "/greeting/input.jsp")
-public class InputAction {
+@Result(path = "/login/login.jsp")
+public class LoginAction {
 
 	@Execute
 	public String execute() {
