@@ -1,30 +1,30 @@
-package tutorial.web.multibox;
+package tutorial.web.multiselect;
 
 import java.util.Arrays;
 
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.Result;
 
-@Result(path = "/multibox/multibox.jsp")
-public class MultiboxAction {
+@Result(path = "/multiselect/multiselect.jsp")
+public class MultiselectAction {
 
-	public String[] checks;
+	public String[] select;
 
-	public String checksAsString;
+	public String selectAsString;
 
 	@Execute
 	public String execute() {
-		checks = new String[] { "Check1" };
+		select = new String[] { "2", "3" };
 		return "success";
 	}
 
 	@Execute
 	public String submit() {
-		checksAsString = Arrays.toString(checks);
+		selectAsString = Arrays.toString(select);
 		return "success";
 	}
 
 	public void reset() {
-		checks = new String[0];
+		select = new String[0];
 	}
 }

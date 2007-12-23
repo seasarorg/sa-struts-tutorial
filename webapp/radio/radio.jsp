@@ -5,20 +5,20 @@
 
 <html>
 <head>
-<title>Login</title>
+<title>Radio</title>
 </head>
 <body>
 <html:errors/>
-<html:form action="/login/welcome">
-<table>
-<tr>
-<td>ユーザ名:</td><td><html:text property="userName"/></td>
-</tr>
-<tr>
-<td>パスワード:</td><td><html:password property="password" redisplay="false"/></td>
-</tr>
-</table>
-<input type="submit" value="ログイン"/>
+<html:form action="/radio/radio">
+
+<html:radio property="radio" value="1"/>One
+<html:radio property="radio" value="2"/>Two
+<html:radio property="radio" value="3"/>Three
+<br />
+<c:out value="${radio}"/>
+<br />
+
+<input type="submit" name="submit" value="サブミット"/>
 </html:form>
 </body>
 </html>

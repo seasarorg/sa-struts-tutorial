@@ -9,13 +9,13 @@
 </head>
 <body>
 <html:errors/>
-<form action="add.do" method="post">
-<input type="text" name="arg1" value="${arg1}"/>
+<html:form action="/add/add">
+<html:text property="arg1"/>
 +
-<input type="text" name="arg2" value="${arg2}"/>
+<html:text property="arg2"/>
 =
 <c:out value="${result}"/><br />
 <input type="submit" name="calculate" value="計算"/>
-</form>
+</html:form>
 </body>
 </html>
