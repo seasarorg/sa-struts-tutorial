@@ -10,8 +10,8 @@
 <body>
 
 <table border="1">
-<c:forEach var="e" items="${empItems}">
-<tr>
+<c:forEach var="e" varStatus="s" items="${empItems}">
+<tr style="background-color:${s.index %2 == 0 ? 'pink' : 'yellow'}">
 <td><c:out value="${e.id}"/></td>
 <td><c:out value="${e.name}"/></td>
 <td><a href="result.do?id=${e.id}">結果ページへ</a></td>
