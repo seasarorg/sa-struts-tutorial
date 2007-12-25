@@ -26,7 +26,7 @@ public class EmployeeDto implements Serializable {
 	public String salary;
 
 	@IntegerType
-	public String department$id;
+	public String departmentId;
 
 	@Required(target = "confirm, store")
 	@IntegerType

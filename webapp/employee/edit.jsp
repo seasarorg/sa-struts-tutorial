@@ -38,9 +38,9 @@
 <tr>
 <td>Department</td>
 <td>
-<html:select property="department$id">
+<html:select property="departmentId">
 <html:option value=""></html:option>
-<c:forEach var="d" items="deptItems">
+<c:forEach var="d" items="${deptItems}">
 <html:option value="${d.id}"><c:out value="${d.name}"/></html:option>
 </c:forEach>
 </html:select>
