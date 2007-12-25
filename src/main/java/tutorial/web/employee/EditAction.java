@@ -6,11 +6,13 @@ import org.seasar.extension.jdbc.JdbcManager;
 import org.seasar.framework.beans.util.Beans;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
+import org.seasar.struts.annotation.Input;
 import org.seasar.struts.annotation.Result;
 
 import tutorial.entity.Department;
 import tutorial.entity.Employee;
 
+@Input(path = "/employee/edit.jsp")
 @Result(path = "/employee/edit.jsp")
 public class EditAction {
 
@@ -23,10 +25,7 @@ public class EditAction {
 
 	@Execute
 	public String edit() {
-		Employee emp = jdbcManager
-			.from(Employee.class)
-			.id(employeeDto.id)
-			.getSingleResult();
+		Employee emp = jdbcManager.from(Employee.class).id().getSingleResult();
 		Beans.copy(emp, employeeDto).execute();
 		deptItems = jdbcManager.from(Department.class).getResultList();
 		return "success";
