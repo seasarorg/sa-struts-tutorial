@@ -1,16 +1,9 @@
 package tutorial.web.employee;
 
-import java.io.Serializable;
-
-import org.seasar.framework.container.annotation.tiger.Component;
-import org.seasar.framework.container.annotation.tiger.InstanceType;
 import org.seasar.struts.annotation.IntegerType;
 import org.seasar.struts.annotation.Required;
 
-@Component(instance = InstanceType.SESSION)
-public class EmployeeDto implements Serializable {
-
-	private static final long serialVersionUID = 1L;
+public class EmployeeDto {
 
 	@Required
 	@IntegerType

@@ -21,7 +21,7 @@
 <td><c:out value="${e.jobType}"/></td>
 <td><fmt:formatNumber value="${e.salary}" pattern="#,##0"/></td>
 <td><c:out value="${e.departmentId}"/></td>
-<td><a href="edit.do?id=${e.id}&edit=">編集</a></td>
+<td><a href="edit.do?id=${e.id}&edit=true">編集</a></td>
 </tr>
 </c:forEach>
 </table>

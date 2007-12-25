@@ -25,8 +25,17 @@ public class EditAction {
 
 	@Execute
 	public String edit() {
-		Employee emp = jdbcManager.from(Employee.class).id().getSingleResult();
+		Employee emp = jdbcManager
+			.from(Employee.class)
+			.id(employeeDto.id)
+			.getSingleResult();
 		Beans.copy(emp, employeeDto).execute();
+		deptItems = jdbcManager.from(Department.class).getResultList();
+		return "success";
+	}
+
+	@Execute
+	public String edit2() {
 		deptItems = jdbcManager.from(Department.class).getResultList();
 		return "success";
 	}

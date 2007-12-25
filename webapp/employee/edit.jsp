@@ -47,7 +47,8 @@
 </td>
 </tr>
 </table>
-<input type="submit" value="確認"/>
+<input type="submit" name="confirm" value="確認"/>
+<input type="submit" name="backToList" value="戻る"/>
 </html:form>
 </body>
 </html>
