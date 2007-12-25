@@ -17,8 +17,8 @@
 				<fileset dir="target"/>
 			</delete>
 			<mkdir dir="target"/>
-			<zip zipfile="target/teeda-html-example-${ver}.zip">
-				<zipfileset prefix="teeda-html-example" dir=".">
+			<zip zipfile="target/sa-struts-tutorial-${ver}.zip">
+				<zipfileset prefix="sa-struts-tutorial" dir=".">
 					<exclude name="target/**"/>
 					<exclude name="work/**"/>
 					<exclude name="**/.settings/**"/>
