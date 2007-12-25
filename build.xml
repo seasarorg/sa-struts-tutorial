@@ -11,5 +11,21 @@
 	    <copy todir="webapp/WEB-INF/lib/sources" file="../s2-tiger/target/s2-tiger-${s2ver}-sources.jar"/>
 	    <copy todir="webapp/WEB-INF/lib/sources" file="../sa-struts/target/sa-struts-${ver}-sources.jar"/>		
 	</target>
+	
+	<target name="dist">
+			<delete includeemptydirs="true" failonerror="false">
+				<fileset dir="target"/>
+			</delete>
+			<mkdir dir="target"/>
+			<zip zipfile="target/teeda-html-example-${ver}.zip">
+				<zipfileset prefix="teeda-html-example" dir=".">
+					<exclude name="target/**"/>
+					<exclude name="work/**"/>
+					<exclude name="**/.settings/**"/>
+					<exclude name="build.xml"/>
+					<exclude name="**/.DS_Store"/>
+				</zipfileset>
+			</zip>
+		</target>
 
 </project>
