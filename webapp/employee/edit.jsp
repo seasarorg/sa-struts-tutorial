@@ -6,11 +6,11 @@
 
 <html>
 <head>
-<title>Employee List</title>
+<title>Employee Edit</title>
 </head>
 <body>
 <html:errors/>
-<html:form action="/employee/confirm">
+<html:form action="/employee/index">
 <html:hidden property="id"/>
 <html:hidden property="version"/>
 <table>
