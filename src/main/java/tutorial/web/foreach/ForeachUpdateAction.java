@@ -8,12 +8,12 @@ import org.seasar.struts.annotation.Result;
 
 import tutorial.entity.Employee;
 
-@Result(path = "/foreach/foreachUpdate.jsp")
+@Result(name = "foreachUpdate", path = "/foreach/foreachUpdate.jsp")
 public class ForeachUpdateAction {
 
 	public List<Employee> empItems = new ArrayList<Employee>();
 
-	@Execute
+	@Execute(validator = false)
 	public String execute() {
 		for (int i = 0; i < 10; i++) {
 			Employee e = new Employee();
@@ -21,11 +21,11 @@ public class ForeachUpdateAction {
 			e.name = "name" + i;
 			empItems.add(e);
 		}
-		return "success";
+		return "foreachUpdate";
 	}
 
-	@Execute
+	@Execute(validator = false)
 	public String submit() {
-		return "success";
+		return "foreachUpdate";
 	}
 }

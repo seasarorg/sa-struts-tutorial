@@ -1,27 +1,22 @@
 package tutorial.web.multibox;
 
-import java.util.Arrays;
-
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.Result;
 
-@Result(path = "/multibox/multibox.jsp")
+@Result(name = "multibox", path = "/multibox/multibox.jsp")
 public class MultiboxAction {
 
 	public String[] checks;
 
-	public String checksAsString;
-
-	@Execute
+	@Execute(validator = false)
 	public String execute() {
 		checks = new String[] { "Check1" };
-		return "success";
+		return "multibox";
 	}
 
-	@Execute
+	@Execute(validator = false)
 	public String submit() {
-		checksAsString = Arrays.toString(checks);
-		return "success";
+		return "multibox";
 	}
 
 	public void reset() {

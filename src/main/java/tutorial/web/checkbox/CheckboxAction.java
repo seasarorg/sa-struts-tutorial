@@ -3,22 +3,22 @@ package tutorial.web.checkbox;
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.Result;
 
-@Result(path = "/checkbox/checkbox.jsp")
+@Result(name = "checkbox", path = "/checkbox/checkbox.jsp")
 public class CheckboxAction {
 
 	public boolean check1;
 
 	public boolean check2;
 
-	@Execute
+	@Execute(validator = false)
 	public String execute() {
 		check2 = true;
-		return "success";
+		return "checkbox";
 	}
 
-	@Execute
+	@Execute(input = "checkbox")
 	public String submit() {
-		return "success";
+		return "checkbox";
 	}
 
 	public void reset() {

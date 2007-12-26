@@ -10,7 +10,6 @@ import org.seasar.struts.annotation.EmailType;
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.FloatRange;
 import org.seasar.struts.annotation.FloatType;
-import org.seasar.struts.annotation.Input;
 import org.seasar.struts.annotation.IntRange;
 import org.seasar.struts.annotation.IntegerType;
 import org.seasar.struts.annotation.LongRange;
@@ -27,83 +26,82 @@ import org.seasar.struts.annotation.ShortType;
 import org.seasar.struts.annotation.UrlType;
 import org.seasar.struts.annotation.Validwhen;
 
-@Result(path = "/validator/validator.jsp")
-@Input(path = "/validator/validator.jsp")
+@Result(name = "validator", path = "/validator/validator.jsp")
 public class ValidatorAction {
 
-	@Required(target = "submit")
+	@Required
 	@ByteType
 	public String byteText;
 
-	@Required(target = "submit")
+	@Required
 	@ShortType
 	public String shortText;
 
-	@Required(target = "submit")
+	@Required
 	@IntegerType
 	public String integerText;
 
-	@Required(target = "submit")
+	@Required
 	@LongType
 	public String longText;
 
-	@Required(target = "submit")
+	@Required
 	@FloatType
 	public String floatText;
 
-	@Required(target = "submit")
+	@Required
 	@DoubleType
 	public String doubleText;
 
-	@Required(target = "submit")
+	@Required
 	@DateType
 	public String dateText;
 
-	@Required(target = "submit")
+	@Required
 	@CreditCardType
 	public String creditcardText;
 
-	@Required(target = "submit")
+	@Required
 	@EmailType
 	public String emailText;
 
-	@Required(target = "submit")
+	@Required
 	@UrlType
 	public String urlText;
 
-	@Required(target = "submit")
+	@Required
 	@IntRange(min = 3, max = 10)
 	public String intRangeText;
 
-	@Required(target = "submit")
+	@Required
 	@LongRange(min = 3, max = 10)
 	public String longRangeText;
 
-	@Required(target = "submit")
+	@Required
 	@FloatRange(min = "3.0", max = "10.0")
 	public String floatRangeText;
 
-	@Required(target = "submit")
+	@Required
 	@DoubleRange(min = "3.0", max = "10.0")
 	public String doubleRangeText;
 
-	@Required(target = "submit")
+	@Required
 	@Minlength(minlength = 3)
 	public String minlengthText;
 
-	@Required(target = "submit")
+	@Required
 	@Maxlength(maxlength = 10)
 	public String maxlengthText;
 
-	@Required(target = "submit")
+	@Required
 	@Minbytelength(minbytelength = 3)
 	public String minbytelengthText;
 
-	@Required(target = "submit")
+	@Required
 	@Maxbytelength(maxbytelength = 10)
 	public String maxbytelengthText;
 
-	@Required(target = "submit")
+	@Required
 	@Mask(mask = "\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d", msg = @Msg(key = "errors.phone"))
 	public String phoneText;
 
@@ -112,7 +110,7 @@ public class ValidatorAction {
 	@Validwhen(test = "((validwhen1Text == null) or (*this* != null))", msg = @Msg(key = "errors.required.other"), args = @Arg(key = "validwhen1Text", resource = false, position = 1))
 	public String validwhen2Text;
 
-	@Execute
+	@Execute(validator = false)
 	public String execute() {
 		byteText = "1";
 		shortText = "1";
@@ -132,11 +130,11 @@ public class ValidatorAction {
 		minbytelengthText = "ああ";
 		maxbytelengthText = "あああああ";
 		phoneText = "03-9999-9999";
-		return "success";
+		return "validator";
 	}
 
-	@Execute
+	@Execute(input = "validator")
 	public String submit() {
-		return "success";
+		return "validator";
 	}
 }

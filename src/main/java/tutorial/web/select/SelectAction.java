@@ -3,19 +3,19 @@ package tutorial.web.select;
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.Result;
 
-@Result(path = "/select/select.jsp")
+@Result(name = "select", path = "/select/select.jsp")
 public class SelectAction {
 
 	public String select;
 
-	@Execute
+	@Execute(validator = false)
 	public String execute() {
 		select = "3";
-		return "success";
+		return "select";
 	}
 
-	@Execute
+	@Execute(validator = false)
 	public String submit() {
-		return "success";
+		return "select";
 	}
 }

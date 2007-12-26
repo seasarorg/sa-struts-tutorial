@@ -8,12 +8,12 @@ import org.seasar.struts.annotation.Result;
 
 import tutorial.entity.Employee;
 
-@Result(path = "/foreach/nestedForeach.jsp")
+@Result(name = "nestedForeach", path = "/foreach/nestedForeach.jsp")
 public class NestedForeachAction {
 
 	public List<List<Employee>> empItemsItems = new ArrayList<List<Employee>>();
 
-	@Execute
+	@Execute(validator = false)
 	public String execute() {
 		for (int i = 0; i < 10; i++) {
 			List<Employee> empItems = new ArrayList<Employee>();
@@ -25,6 +25,6 @@ public class NestedForeachAction {
 			}
 			empItemsItems.add(empItems);
 		}
-		return "success";
+		return "nestedForeach";
 	}
 }

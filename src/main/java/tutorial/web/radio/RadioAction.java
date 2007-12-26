@@ -3,19 +3,19 @@ package tutorial.web.radio;
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.Result;
 
-@Result(path = "/radio/radio.jsp")
+@Result(name = "radio", path = "/radio/radio.jsp")
 public class RadioAction {
 
 	public String radio;
 
-	@Execute
+	@Execute(validator = false)
 	public String execute() {
 		radio = "3";
-		return "success";
+		return "radio";
 	}
 
-	@Execute
+	@Execute(validator = false)
 	public String submit() {
-		return "success";
+		return "radio";
 	}
 }

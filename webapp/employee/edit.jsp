@@ -10,7 +10,7 @@
 </head>
 <body>
 <html:errors/>
-<html:form action="/employee/index">
+<html:form action="/employee/employee">
 <html:hidden property="id"/>
 <html:hidden property="version"/>
 <table>
@@ -48,7 +48,7 @@
 </tr>
 </table>
 <input type="submit" name="confirm" value="確認"/>
-<input type="submit" name="backToList" value="戻る"/>
+<input type="submit" name="execute" value="戻る"/>
 </html:form>
 </body>
 </html>

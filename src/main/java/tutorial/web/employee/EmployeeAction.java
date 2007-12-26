@@ -13,23 +13,21 @@ import org.seasar.struts.annotation.Results;
 import tutorial.entity.Department;
 import tutorial.entity.Employee;
 
-@Results( { @Result(name = "list", path = "/employee/list.jsp"),
+@Results( {
+	@Result(name = "list", path = "/employee/list.jsp"),
 	@Result(name = "edit", path = "/employee/edit.jsp"),
+	@Result(name = "backToEdit", path = "/employee/employee.do?backToEdit=true"),
 	@Result(name = "confirm", path = "/employee/confirm.jsp") })
-public class IndexAction {
-
-	public List<Employee> empItems;
-
-	public List<Department> deptItems;
+public class EmployeeAction {
 
 	@Required
 	@IntegerType
 	public String id;
 
-	@Required(target = "confirm, store")
+	@Required
 	public String name;
 
-	@Required(target = "confirm, store")
+	@Required
 	public String jobType;
 
 	@IntegerType
@@ -38,9 +36,13 @@ public class IndexAction {
 	@IntegerType
 	public String departmentId;
 
-	@Required(target = "confirm, store")
+	@Required
 	@IntegerType
 	public String version;
+
+	public List<Employee> empItems;
+
+	public List<Department> deptItems;
 
 	public JdbcManager jdbcManager;
 
@@ -53,7 +55,7 @@ public class IndexAction {
 		return "list";
 	}
 
-	@Execute(input = "/employee/edit.jsp")
+	@Execute(validator = false)
 	public String edit() {
 		Employee emp = jdbcManager
 			.from(Employee.class)
@@ -64,12 +66,12 @@ public class IndexAction {
 		return "edit";
 	}
 
-	@Execute(input = "/employee/edit.jsp")
+	@Execute(input = "backToEdit")
 	public String confirm() {
 		return "confirm";
 	}
 
-	@Execute(input = "/employee/confirm.jsp")
+	@Execute(input = "confirm")
 	public String store() {
 		Employee emp = Beans.createAndCopy(Employee.class, this).execute();
 		jdbcManager.update(emp).execute();
@@ -80,10 +82,5 @@ public class IndexAction {
 	public String backToEdit() {
 		deptItems = jdbcManager.from(Department.class).getResultList();
 		return "edit";
-	}
-
-	@Execute(validator = false)
-	public String backToList() {
-		return execute();
 	}
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
 <html:errors/>
-<html:form action="/employee/index">
+<html:form action="/employee/employee">
 <html:hidden property="id"/>
 <html:hidden property="name"/>
 <html:hidden property="jobType"/>
