@@ -12,7 +12,7 @@
 
 <table border="1">
 <c:forEach var="e" varStatus="s" items="${empItems}">
-<tr style="background-color:${s.index %2 == 0 ? 'pink' : 'yellow'}">
+<tr style="background-color:${s.index % 2 == 0 ? 'pink' : 'yellow'}">
 <td><c:out value="${e.id}"/></td>
 <td><c:out value="${e.name}"/></td>
 <td><a href="foreach.do?id=${e.id}&submit=true">結果ページへ</a></td>

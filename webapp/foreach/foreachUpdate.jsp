@@ -12,7 +12,7 @@
 <html:errors/>
 <html:form action="/foreach/foreachUpdate">
 <table border="1">
-<c:forEach var="empItems" varStatus="s" items="${empItems}">
+<c:forEach var="empItems" items="${empItems}">
 <tr>
 <td><html:text name="empItems" property="id" indexed="true"/></td>
 <td><html:text name="empItems" property="name" indexed="true"/></td>
