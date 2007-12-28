@@ -18,8 +18,4 @@ public class MultiboxAction {
 	public String submit() {
 		return "multibox";
 	}
-
-	public void reset() {
-		checks = new String[0];
-	}
 }

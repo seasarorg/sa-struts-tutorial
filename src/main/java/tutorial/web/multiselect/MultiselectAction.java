@@ -18,8 +18,4 @@ public class MultiselectAction {
 	public String submit() {
 		return "multiselect";
 	}
-
-	public void reset() {
-		select = new String[0];
-	}
 }

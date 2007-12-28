@@ -31,7 +31,7 @@
 <td>Salary</td><td><c:out value="${salary}"/></td>
 </tr>
 <tr>
-<td>Department Id</td><td><c:out value="${departmentId}"/></td>
+<td>Department</td><td><c:out value="${departmentId}"/></td>
 </tr>
 </table>
 <input type="submit" name="store" value="更新"/>

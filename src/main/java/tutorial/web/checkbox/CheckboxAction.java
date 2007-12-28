@@ -20,9 +20,4 @@ public class CheckboxAction {
 	public String submit() {
 		return "checkbox";
 	}
-
-	public void reset() {
-		check1 = false;
-		check1 = false;
-	}
 }

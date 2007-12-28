@@ -50,6 +50,7 @@ public class EmployeeAction {
 	public String execute() {
 		empItems = jdbcManager
 			.from(Employee.class)
+			.leftOuterJoin("department")
 			.orderBy("id")
 			.getResultList();
 		return "list";
@@ -62,7 +63,10 @@ public class EmployeeAction {
 			.id(id)
 			.getSingleResult();
 		Beans.copy(emp, this).execute();
-		deptItems = jdbcManager.from(Department.class).getResultList();
+		deptItems = jdbcManager
+			.from(Department.class)
+			.orderBy("id")
+			.getResultList();
 		return "edit";
 	}
 
@@ -80,7 +84,10 @@ public class EmployeeAction {
 
 	@Execute(validator = false)
 	public String backToEdit() {
-		deptItems = jdbcManager.from(Department.class).getResultList();
+		deptItems = jdbcManager
+			.from(Department.class)
+			.orderBy("id")
+			.getResultList();
 		return "edit";
 	}
 }
