@@ -2,11 +2,7 @@ package tutorial.web.login;
 
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.Required;
-import org.seasar.struts.annotation.Result;
-import org.seasar.struts.annotation.Results;
 
-@Results( { @Result(name = "login", path = "/login/login.jsp"),
-	@Result(name = "welcome", path = "/login/welcome.jsp") })
 public class LoginAction {
 
 	@Required
@@ -17,11 +13,11 @@ public class LoginAction {
 
 	@Execute(validator = false)
 	public String execute() {
-		return "login";
+		return "login.jsp";
 	}
 
-	@Execute(input = "login")
+	@Execute(input = "login.jsp")
 	public String login() {
-		return "welcome";
+		return "welcome.jsp";
 	}
 }

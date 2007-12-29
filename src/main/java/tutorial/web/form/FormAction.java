@@ -2,12 +2,7 @@ package tutorial.web.form;
 
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
-import org.seasar.struts.annotation.Result;
-import org.seasar.struts.annotation.Results;
 
-@Results( { @Result(name = "first", path = "/form/first.jsp"),
-	@Result(name = "second", path = "/form/second.jsp"),
-	@Result(name = "third", path = "/form/third.jsp") })
 public class FormAction {
 
 	@ActionForm
@@ -15,16 +10,16 @@ public class FormAction {
 
 	@Execute(validator = false)
 	public String execute() {
-		return "first";
+		return "first.jsp";
 	}
 
 	@Execute(validator = false)
 	public String goSecond() {
-		return "second";
+		return "second.jsp";
 	}
 
 	@Execute(validator = false)
 	public String goThird() {
-		return "third";
+		return "third.jsp";
 	}
 }

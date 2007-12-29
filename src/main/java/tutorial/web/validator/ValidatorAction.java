@@ -21,12 +21,10 @@ import org.seasar.struts.annotation.Minbytelength;
 import org.seasar.struts.annotation.Minlength;
 import org.seasar.struts.annotation.Msg;
 import org.seasar.struts.annotation.Required;
-import org.seasar.struts.annotation.Result;
 import org.seasar.struts.annotation.ShortType;
 import org.seasar.struts.annotation.UrlType;
 import org.seasar.struts.annotation.Validwhen;
 
-@Result(name = "validator", path = "/validator/validator.jsp")
 public class ValidatorAction {
 
 	@Required
@@ -130,11 +128,11 @@ public class ValidatorAction {
 		minbytelengthText = "ああ";
 		maxbytelengthText = "あああああ";
 		phoneText = "03-9999-9999";
-		return "validator";
+		return "validator.jsp";
 	}
 
-	@Execute(input = "validator")
+	@Execute(input = "validator.jsp")
 	public String submit() {
-		return "validator";
+		return "validator.jsp";
 	}
 }

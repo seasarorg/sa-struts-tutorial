@@ -4,13 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.seasar.struts.annotation.Execute;
-import org.seasar.struts.annotation.Result;
-import org.seasar.struts.annotation.Results;
 
 import tutorial.entity.Employee;
 
-@Results( { @Result(name = "foreach", path = "/foreach/foreach.jsp"),
-	@Result(name = "result", path = "/foreach/result.jsp") })
 public class ForeachAction {
 
 	public List<Employee> empItems = new ArrayList<Employee>();
@@ -25,11 +21,11 @@ public class ForeachAction {
 			e.name = "name" + i;
 			empItems.add(e);
 		}
-		return "foreach";
+		return "foreach.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "result";
+		return "result.jsp";
 	}
 }

@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.seasar.struts.annotation.Execute;
-import org.seasar.struts.annotation.Result;
 
 import tutorial.entity.Employee;
 
-@Result(name = "nestedForeachUpdate", path = "/foreach/nestedForeachUpdate.jsp")
 public class NestedForeachUpdateAction {
 
 	public List<List<Employee>> empItemsItems = new ArrayList<List<Employee>>();
@@ -25,11 +23,11 @@ public class NestedForeachUpdateAction {
 			}
 			empItemsItems.add(empItems);
 		}
-		return "nestedForeachUpdate";
+		return "nestedForeachUpdate.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "nestedForeachUpdate";
+		return "nestedForeachUpdate.jsp";
 	}
 }

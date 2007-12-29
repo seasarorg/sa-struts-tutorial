@@ -7,17 +7,10 @@ import org.seasar.framework.beans.util.Beans;
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.IntegerType;
 import org.seasar.struts.annotation.Required;
-import org.seasar.struts.annotation.Result;
-import org.seasar.struts.annotation.Results;
 
 import tutorial.entity.Department;
 import tutorial.entity.Employee;
 
-@Results( {
-	@Result(name = "list", path = "/employee/list.jsp"),
-	@Result(name = "edit", path = "/employee/edit.jsp"),
-	@Result(name = "backToEdit", path = "/employee/employee.do?backToEdit=true"),
-	@Result(name = "confirm", path = "/employee/confirm.jsp") })
 public class EmployeeAction {
 
 	@Required
@@ -53,7 +46,7 @@ public class EmployeeAction {
 			.leftOuterJoin("department")
 			.orderBy("id")
 			.getResultList();
-		return "list";
+		return "list.jsp";
 	}
 
 	@Execute(validator = false)
@@ -67,15 +60,15 @@ public class EmployeeAction {
 			.from(Department.class)
 			.orderBy("id")
 			.getResultList();
-		return "edit";
+		return "edit.jsp";
 	}
 
-	@Execute(input = "backToEdit")
+	@Execute(input = "employee.do?backToEdit=true")
 	public String confirm() {
-		return "confirm";
+		return "confirm.jsp";
 	}
 
-	@Execute(input = "confirm")
+	@Execute(input = "confirm.jsp")
 	public String store() {
 		Employee emp = Beans.createAndCopy(Employee.class, this).execute();
 		jdbcManager.update(emp).execute();
@@ -88,6 +81,6 @@ public class EmployeeAction {
 			.from(Department.class)
 			.orderBy("id")
 			.getResultList();
-		return "edit";
+		return "edit.jsp";
 	}
 }
