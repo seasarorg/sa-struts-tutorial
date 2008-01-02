@@ -33,5 +33,8 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-framework-2.4.20-SNAPSHOT.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-framework-2.4.20-SNAPSHOT-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-tiger-2.4.20-SNAPSHOT.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-tiger-2.4.20-SNAPSHOT-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/commons-validator-1.2.0.jar" sourcepath="webapp/WEB-INF/lib/sources/commons-validator-1.2.0-src.zip"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/servlet-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/jasper-runtime.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/jsp-api.jar"/>
 	<classpathentry kind="output" path="target/test-classes"/>
 </classpath>

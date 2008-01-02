@@ -7,17 +7,15 @@
 
 <html>
 <head>
-<title>Form Second</title>
+<title>Form Third</title>
 </head>
 <body>
-<html:errors/>
-<html:form action="/form/form">
+<html:form action="/validator/third">
 <table>
 <tr><td>First</td><td><c:out value="${first}"/></td></tr>
-<tr><td>Second</td><td><html:text property="second"/></td></tr>
-</table>
-<input type="submit" name="goThird" value="Thirdへ"/>
-<input type="submit" name="execute" value="戻る"/>
+<tr><td>Second</td><td><c:out value="${second}"/></td></tr>
+</table><br />
+<input type="submit" name="backSecond" value="戻る"/>
 </html:form>
 </body>
 </html>

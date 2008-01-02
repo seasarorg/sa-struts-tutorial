@@ -7,17 +7,9 @@
 
 <html>
 <head>
-<title>Form Second</title>
+<title>Token Result</title>
 </head>
 <body>
-<html:errors/>
-<html:form action="/form/form">
-<table>
-<tr><td>First</td><td><c:out value="${first}"/></td></tr>
-<tr><td>Second</td><td><html:text property="second"/></td></tr>
-</table>
-<input type="submit" name="goThird" value="Thirdへ"/>
-<input type="submit" name="execute" value="戻る"/>
-</html:form>
+<c:out value="${text}"/>!!!
 </body>
 </html>

@@ -7,17 +7,15 @@
 
 <html>
 <head>
-<title>Form Second</title>
+<title>Validator First</title>
+<html:javascript formName="validator_secondActionForm"/>
 </head>
 <body>
 <html:errors/>
-<html:form action="/form/form">
-<table>
-<tr><td>First</td><td><c:out value="${first}"/></td></tr>
-<tr><td>Second</td><td><html:text property="second"/></td></tr>
-</table>
-<input type="submit" name="goThird" value="Thirdへ"/>
-<input type="submit" name="execute" value="戻る"/>
+<html:form action="/validator/second"
+    onsubmit="return validateValidator_secondActionForm(this)">
+First:<html:text property="first"/><br />
+<input type="submit" name="goSecond" value="Secondへ"/>
 </html:form>
 </body>
 </html>

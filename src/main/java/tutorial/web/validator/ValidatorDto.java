@@ -1,4 +1,4 @@
-package tutorial.web.form;
+package tutorial.web.validator;
 
 import java.io.Serializable;
 
@@ -7,11 +7,11 @@ import org.seasar.framework.container.annotation.tiger.InstanceType;
 import org.seasar.struts.annotation.Required;
 
 @Component(instance = InstanceType.SESSION)
-public class FormDto implements Serializable {
+public class ValidatorDto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@Required
+	@Required(target = "goSecond")
 	public String first;
 
 	@Required(target = "goThird")

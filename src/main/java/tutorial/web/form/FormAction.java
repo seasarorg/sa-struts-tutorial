@@ -13,12 +13,17 @@ public class FormAction {
 		return "first.jsp";
 	}
 
-	@Execute(validator = false)
+	@Execute(input = "first.jsp")
 	public String goSecond() {
 		return "second.jsp";
 	}
 
 	@Execute(validator = false)
+	public String backSecond() {
+		return "second.jsp";
+	}
+
+	@Execute(input = "second.jsp")
 	public String goThird() {
 		return "third.jsp";
 	}
