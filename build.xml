@@ -1,4 +1,4 @@
-<project name="s2jdbc-tutorial" default="copy" basedir=".">
+<project name="sa-struts-tutorial" default="copy" basedir=".">
 	<property name="s2ver" value="2.4.20-SNAPSHOT"/>
 	<property name="ver" value="rc1-SNAPSHOT"/>
 	<target name="copy">
