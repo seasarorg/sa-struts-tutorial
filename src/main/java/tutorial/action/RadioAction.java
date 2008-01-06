@@ -1,4 +1,4 @@
-package tutorial.web.radio;
+package tutorial.action;
 
 import org.seasar.struts.annotation.Execute;
 
@@ -7,7 +7,7 @@ public class RadioAction {
 	public String radio;
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		radio = "3";
 		return "radio.jsp";
 	}

@@ -1,4 +1,4 @@
-package tutorial.web.multiselect;
+package tutorial.action;
 
 import org.seasar.struts.annotation.Execute;
 
@@ -7,7 +7,7 @@ public class MultiselectAction {
 	public String[] select = new String[0];
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		select = new String[] { "2", "3" };
 		return "multiselect.jsp";
 	}

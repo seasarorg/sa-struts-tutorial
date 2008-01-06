@@ -1,7 +1,9 @@
-package tutorial.web.form;
+package tutorial.action;
 
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
+
+import tutorial.dto.FormDto;
 
 public class FormAction {
 
@@ -9,7 +11,7 @@ public class FormAction {
 	public FormDto formDto;
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		return "first.jsp";
 	}
 

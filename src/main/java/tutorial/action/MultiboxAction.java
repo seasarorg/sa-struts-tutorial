@@ -1,4 +1,4 @@
-package tutorial.web.multibox;
+package tutorial.action;
 
 import org.seasar.struts.annotation.Execute;
 
@@ -7,7 +7,7 @@ public class MultiboxAction {
 	public String[] checks;
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		checks = new String[] { "Check1" };
 		return "multibox.jsp";
 	}

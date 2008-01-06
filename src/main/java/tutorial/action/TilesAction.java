@@ -1,13 +1,13 @@
-package tutorial.web.tiles;
+package tutorial.action;
 
 import org.seasar.struts.annotation.Execute;
 
 public class TilesAction {
 
-	public String name = "seasar";
+	public String name = "Seasar2";
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		return "tiles.jsp";
 	}
 }

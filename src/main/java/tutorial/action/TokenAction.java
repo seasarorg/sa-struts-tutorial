@@ -1,4 +1,4 @@
-package tutorial.web.token;
+package tutorial.action;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -14,7 +14,7 @@ public class TokenAction {
 	public HttpServletRequest request;
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		TokenProcessor.getInstance().saveToken(request);
 		return "input.jsp";
 	}

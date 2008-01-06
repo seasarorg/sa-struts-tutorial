@@ -1,4 +1,4 @@
-package tutorial.web.foreach;
+package tutorial.action;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class NestedForeachUpdateAction {
 	public List<List<Employee>> empItemsItems = new ArrayList<List<Employee>>();
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		for (int i = 0; i < 10; i++) {
 			List<Employee> empItems = new ArrayList<Employee>();
 			for (int j = 0; j < 2; j++) {

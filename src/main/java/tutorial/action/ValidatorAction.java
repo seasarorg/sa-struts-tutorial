@@ -1,4 +1,4 @@
-package tutorial.web.validator;
+package tutorial.action;
 
 import org.seasar.struts.annotation.Arg;
 import org.seasar.struts.annotation.ByteType;
@@ -109,7 +109,7 @@ public class ValidatorAction {
 	public String validwhen2Text;
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		byteText = "1";
 		shortText = "1";
 		integerText = "1";
