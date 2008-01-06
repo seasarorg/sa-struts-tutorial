@@ -1,4 +1,4 @@
-package tutorial.web.login;
+package tutorial.action;
 
 import org.apache.struts.action.ActionMessage;
 import org.apache.struts.action.ActionMessages;
@@ -14,7 +14,7 @@ public class LoginAction {
 	public String password;
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		return "login.jsp";
 	}
 

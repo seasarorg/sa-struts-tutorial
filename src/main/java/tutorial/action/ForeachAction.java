@@ -1,4 +1,4 @@
-package tutorial.web.foreach;
+package tutorial.action;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ public class ForeachAction {
 	public String id;
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		for (int i = 0; i < 10; i++) {
 			Employee e = new Employee();
 			e.id = i;
@@ -24,7 +24,7 @@ public class ForeachAction {
 		return "foreach.jsp";
 	}
 
-	@Execute(validator = false)
+	@Execute(validator = false, urlPattern = "submit/{id}")
 	public String submit() {
 		return "result.jsp";
 	}

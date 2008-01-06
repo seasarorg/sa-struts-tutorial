@@ -1,13 +1,13 @@
-package tutorial.web.condition;
+package tutorial.action;
 
 import org.seasar.struts.annotation.Execute;
 
-public class IfAction {
+public class ConditionAction {
 
 	public String hoge;
 
 	@Execute(validator = false)
-	public String execute() {
-		return "if.jsp";
+	public String index() {
+		return "condition.jsp";
 	}
 }

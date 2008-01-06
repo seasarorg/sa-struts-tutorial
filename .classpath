@@ -29,10 +29,10 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/standard.jar" sourcepath="webapp/WEB-INF/lib/sources/jakarta-taglibs-standard-1.1.2-src.zip"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/struts-1.2.9.jar" sourcepath="webapp/WEB-INF/lib/sources/struts-1.2.9-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/antlr.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-extension-2.4.20-SNAPSHOT.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-extension-2.4.20-SNAPSHOT-sources.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-framework-2.4.20-SNAPSHOT.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-framework-2.4.20-SNAPSHOT-sources.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-tiger-2.4.20-SNAPSHOT.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-tiger-2.4.20-SNAPSHOT-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/commons-validator-1.2.0.jar" sourcepath="webapp/WEB-INF/lib/sources/commons-validator-1.2.0-src.zip"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-extension-2.4.20.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-extension-2.4.20-sources.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-framework-2.4.20.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-framework-2.4.20-sources.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-tiger-2.4.20.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-tiger-2.4.20-sources.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/servlet-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/jasper-runtime.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/jsp-api.jar"/>

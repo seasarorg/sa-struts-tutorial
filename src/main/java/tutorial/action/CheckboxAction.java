@@ -1,4 +1,4 @@
-package tutorial.web.checkbox;
+package tutorial.action;
 
 import org.seasar.struts.annotation.Execute;
 
@@ -9,7 +9,7 @@ public class CheckboxAction {
 	public boolean check2;
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		check2 = true;
 		return "checkbox.jsp";
 	}

@@ -1,22 +1,15 @@
-<%@page pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@taglib prefix="html" uri="http://struts.apache.org/tags-html"%>  
-<%@taglib prefix="bean" uri="http://struts.apache.org/tags-bean"%>  
-<%@taglib prefix="tiles" uri="http://jakarta.apache.org/struts/tags-tiles"%>
-
 <html>
 <head>
 <title>Employee Edit</title>
 </head>
 <body>
 <html:errors/>
-<html:form action="/employee/employee">
+<s:form action="/employee">
 <html:hidden property="id"/>
 <html:hidden property="version"/>
 <table>
 <tr>
-<td>Id</td><td><c:out value="${id}"/></td>
+<td>Id</td><td>${f:h(id)}</td>
 </tr>
 <tr>
 <td>Name</td><td><html:text property="name"/></td>
@@ -50,6 +43,6 @@
 </table>
 <input type="submit" name="confirm" value="確認"/>
 <input type="submit" name="execute" value="戻る"/>
-</html:form>
+</s:form>
 </body>
 </html>

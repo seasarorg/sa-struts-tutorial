@@ -1,4 +1,4 @@
-package tutorial.web.employee;
+package tutorial.action;
 
 import java.util.List;
 
@@ -40,7 +40,7 @@ public class EmployeeAction {
 	public JdbcManager jdbcManager;
 
 	@Execute(validator = false)
-	public String execute() {
+	public String index() {
 		empItems = jdbcManager
 			.from(Employee.class)
 			.leftOuterJoin("department")
@@ -49,7 +49,7 @@ public class EmployeeAction {
 		return "list.jsp";
 	}
 
-	@Execute(validator = false)
+	@Execute(validator = false, urlPattern = "edit/{id}")
 	public String edit() {
 		Employee emp = jdbcManager
 			.from(Employee.class)
@@ -63,7 +63,7 @@ public class EmployeeAction {
 		return "edit.jsp";
 	}
 
-	@Execute(input = "employee.do?backToEdit=true")
+	@Execute(input = "backToEdit")
 	public String confirm() {
 		return "confirm.jsp";
 	}
@@ -72,7 +72,7 @@ public class EmployeeAction {
 	public String store() {
 		Employee emp = Beans.createAndCopy(Employee.class, this).execute();
 		jdbcManager.update(emp).execute();
-		return execute();
+		return index();
 	}
 
 	@Execute(validator = false)

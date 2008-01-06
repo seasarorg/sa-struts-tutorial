@@ -1,10 +1,3 @@
-<%@page pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@taglib prefix="html" uri="http://struts.apache.org/tags-html"%>  
-<%@taglib prefix="bean" uri="http://struts.apache.org/tags-bean"%>  
-<%@taglib prefix="tiles" uri="http://jakarta.apache.org/struts/tags-tiles"%>
-
 <html>
 <head>
 <title>Employee List</title>
@@ -22,7 +15,7 @@
 <td><c:out value="${e.jobType}"/></td>
 <td align="right"><fmt:formatNumber value="${e.salary}" pattern="#,##0"/></td>
 <td align="right"><c:out value="${e.departmentId}"/></td>
-<td><a href="employee.do?id=${e.id}&edit=true">編集</a></td>
+<td><a href="edit/${e.id}">編集</a></td>
 </tr>
 </c:forEach>
 </table>

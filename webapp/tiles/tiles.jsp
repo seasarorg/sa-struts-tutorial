@@ -5,7 +5,7 @@
 <%@taglib prefix="bean" uri="http://struts.apache.org/tags-bean"%>  
 <%@taglib prefix="tiles" uri="http://jakarta.apache.org/struts/tags-tiles"%>
 
-<tiles:insert template="/WEB-INF/layout/layout.jsp" flush="true">
+<tiles:insert template="/common/layout.jsp" flush="true">
 <tiles:put name="title"  value="Tiles"/>
 <tiles:put name="content" type="string">
 <c:out value="${name}"/>
