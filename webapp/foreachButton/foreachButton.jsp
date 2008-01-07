@@ -9,8 +9,11 @@
 <tr>
 <td><c:out value="${e.id}"/></td>
 <td><c:out value="${e.name}"/></td>
-<td><input type="button"
-  onclick="location.href='submit/${f:h(e.id)}'" value="結果ページへ"/></td>
+<td>
+<form action="submit/${f:h(e.id)}">
+<input type="submit" value="結果ページへ"/>
+</form>
+</td>
 </tr>
 </c:forEach>
 </table>
