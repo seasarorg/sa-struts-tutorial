@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0"?>
 
 <!DOCTYPE struts-config PUBLIC
           "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
@@ -45,7 +45,7 @@
     <plug-in className="org.seasar.struts.validator.S2ValidatorPlugIn">
         <set-property
           property="pathnames"
-          value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+          value="/WEB-INF/validator-rules.xml"/>
     </plug-in>
 </struts-config>
 
