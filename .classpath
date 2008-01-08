@@ -25,7 +25,6 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/log4j-1.2.13.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/ognl-2.6.9-patch-20070908.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/poi-3.0-FINAL.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/sa-struts-rc1-SNAPSHOT.jar" sourcepath="webapp/WEB-INF/lib/sources/sa-struts-rc1-SNAPSHOT-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/standard.jar" sourcepath="webapp/WEB-INF/lib/sources/jakarta-taglibs-standard-1.1.2-src.zip"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/struts-1.2.9.jar" sourcepath="webapp/WEB-INF/lib/sources/struts-1.2.9-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/antlr.jar"/>
@@ -33,6 +32,7 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-extension-2.4.20.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-extension-2.4.20-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-framework-2.4.20.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-framework-2.4.20-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-tiger-2.4.20.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-tiger-2.4.20-sources.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/sa-struts-rc1.jar" sourcepath="webapp/WEB-INF/lib/sources/sa-struts-rc1-sources.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/servlet-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/jasper-runtime.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/jsp-api.jar"/>
