@@ -3,6 +3,6 @@
 <title>Token Result</title>
 </head>
 <body>
-${f:h(text)}
+ブラウザで前の画面に戻って、もう一度サブミットしてください。
 </body>
 </html>

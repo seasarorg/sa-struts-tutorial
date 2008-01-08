@@ -4,22 +4,22 @@
 </head>
 <body>
 <html:errors/>
-<c:if test="${hoge != null}">
-hoge is not null
+<c:if test="${id != null}">
+"id" is not null.
 </c:if>
-<c:if test="${hoge == null}">
-hoge is null
+<c:if test="${id == null}">
+"id" is null.
 </c:if>
 <br />
 <c:choose>
-<c:when test="${hoge == '1'}">
-One
+<c:when test="${id == '1'}">
+"id" is one.
 </c:when>
-<c:when test="${hoge == '2'}">
-Two
+<c:when test="${id == '2'}">
+"id" is two.
 </c:when>
 <c:otherwise>
-Other
+"id" is other.
 </c:otherwise>
 </c:choose>
 </body>

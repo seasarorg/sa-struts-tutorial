@@ -9,8 +9,6 @@ import org.seasar.struts.annotation.Execute;
 
 public class TokenAction {
 
-	public String text;
-
 	public HttpServletRequest request;
 
 	@Execute(validator = false)

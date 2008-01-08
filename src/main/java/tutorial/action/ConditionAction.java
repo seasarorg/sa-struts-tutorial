@@ -4,9 +4,9 @@ import org.seasar.struts.annotation.Execute;
 
 public class ConditionAction {
 
-	public String hoge;
+	public String id;
 
-	@Execute(validator = false)
+	@Execute(validator = false, urlPattern = "{id}")
 	public String index() {
 		return "condition.jsp";
 	}
