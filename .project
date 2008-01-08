@@ -13,7 +13,6 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
-		<nature>org.seasar.dolteng.eclipse.nature</nature>
 		<nature>org.seasar.dblauncher.nature</nature>
 		<nature>com.sysdeo.eclipse.tomcat.tomcatnature</nature>
 	</natures>
