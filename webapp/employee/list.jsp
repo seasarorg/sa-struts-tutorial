@@ -10,12 +10,12 @@
 </tr>
 <c:forEach var="e" varStatus="s" items="${empItems}">
 <tr style="background-color:${s.index %2 == 0 ? 'white' : 'yellow'}">
-<td align="right"><c:out value="${e.id}"/></td>
+<td align="right">${f:h(e.id)}</td>
 <td><c:out value="${e.name}"/></td>
 <td><c:out value="${e.jobType}"/></td>
 <td align="right"><fmt:formatNumber value="${e.salary}" pattern="#,##0"/></td>
-<td align="right"><c:out value="${e.departmentId}"/></td>
-<td><a href="edit/${e.id}">編集</a></td>
+<td align="right">${f:h(e.departmentId)}</td>
+<td><a href="edit/${f:u(e.id)}">編集</a></td>
 </tr>
 </c:forEach>
 </table>

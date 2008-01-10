@@ -8,8 +8,8 @@
 <c:forEach var="empItems" items="${empItemsItems}">
 <tr>
 <c:forEach var="emp" items="${empItems}">
-<td><c:out value="${emp.id}"/></td>
-<td><c:out value="${emp.name}"/></td>
+<td>${f:h(emp.id)}</td>
+<td>${f:h(emp.name)}</td>
 </c:forEach>
 </tr>
 </c:forEach>

@@ -35,7 +35,7 @@
 <html:select property="departmentId">
 <html:option value=""></html:option>
 <c:forEach var="d" items="${deptItems}">
-<html:option value="${d.id}"><c:out value="${d.name}"/></html:option>
+<html:option value="${f:h(d.id)}">${f:h(d.name)}</html:option>
 </c:forEach>
 </html:select>
 </td>

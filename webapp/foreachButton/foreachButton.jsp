@@ -10,7 +10,7 @@
 <td><c:out value="${e.id}"/></td>
 <td><c:out value="${e.name}"/></td>
 <td>
-<form action="submit/${f:h(e.id)}">
+<form action="submit/${f:u(e.id)}">
 <input type="submit" value="結果ページへ"/>
 </form>
 </td>
