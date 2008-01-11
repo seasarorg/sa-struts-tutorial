@@ -11,7 +11,6 @@ import org.apache.struts.upload.FormFile;
 import org.seasar.framework.container.annotation.tiger.Binding;
 import org.seasar.framework.container.annotation.tiger.BindingType;
 import org.seasar.framework.exception.IORuntimeException;
-import org.seasar.framework.util.OutputStreamUtil;
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.Required;
 import org.seasar.struts.util.MessageResourcesUtil;
@@ -41,7 +40,7 @@ public class UploadAction {
 			try {
 				out.write(formFile.getFileData(), 0, formFile.getFileSize());
 			} finally {
-				OutputStreamUtil.close(out);
+				out.close();
 			}
 		} catch (IOException e) {
 			throw new IORuntimeException(e);

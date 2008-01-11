@@ -1,6 +1,6 @@
 <project name="sa-struts-tutorial" default="copy" basedir=".">
 	<property name="s2ver" value="2.4.20"/>
-	<property name="ver" value="rc2"/>
+	<property name="ver" value="rc3"/>
 	<target name="copy">
 		<copy todir="webapp/WEB-INF/lib" file="../seasar2/s2-framework/target/s2-framework-${s2ver}.jar"/>
 		<copy todir="webapp/WEB-INF/lib" file="../seasar2/s2-extension/target/s2-extension-${s2ver}.jar"/>
