@@ -6,7 +6,6 @@ public class IndexAction {
 
 	@Execute(validator = false)
 	public String index() {
-		return "http://www.seasar.org?redirect=true";
-		// return "start.jsp";
+		return "start.jsp";
 	}
 }
