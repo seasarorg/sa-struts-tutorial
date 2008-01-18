@@ -36,6 +36,6 @@
 	<classpathentry kind="lib" path="lib/geronimo-servlet_2.4_spec-1.0.jar"/>
 	<classpathentry kind="lib" path="lib/junit-3.8.2.jar" sourcepath="lib/sources/junit-3.8.2-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/commons-io-1.3.2.jar" sourcepath="webapp/WEB-INF/lib/sources/commons-io-1.3.2-sources.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/sa-struts-rc6.jar" sourcepath="webapp/WEB-INF/lib/sources/sa-struts-rc6-sources.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/sa-struts-rc7.jar" sourcepath="webapp/WEB-INF/lib/sources/sa-struts-rc7-sources.jar"/>
 	<classpathentry kind="output" path="target/test-classes"/>
 </classpath>
