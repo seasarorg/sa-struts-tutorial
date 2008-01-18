@@ -81,7 +81,6 @@ public class EmployeeAction {
 
 	@Execute(validator = false)
 	public String backToEdit() {
-		System.out.println(request.getParameter("SAStruts.method"));
 		deptItems = jdbcManager
 			.from(Department.class)
 			.orderBy("id")
