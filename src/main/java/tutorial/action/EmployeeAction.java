@@ -2,8 +2,6 @@ package tutorial.action;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.seasar.extension.jdbc.JdbcManager;
 import org.seasar.framework.beans.util.Beans;
 import org.seasar.struts.annotation.Execute;
@@ -40,8 +38,6 @@ public class EmployeeAction {
 	public List<Department> deptItems;
 
 	public JdbcManager jdbcManager;
-
-	public HttpServletRequest request;
 
 	@Execute(validator = false)
 	public String index() {
