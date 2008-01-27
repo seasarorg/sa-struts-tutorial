@@ -4,6 +4,7 @@
 </head>
 <body>
 <html:errors/>
+"id" is ${f:h(id)}.<br />
 <c:if test="${id != null}">
 "id" is not null.
 </c:if>
