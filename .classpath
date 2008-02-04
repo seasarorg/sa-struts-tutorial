@@ -36,6 +36,6 @@
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-extension-2.4.22.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-extension-2.4.22-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-framework-2.4.22.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-framework-2.4.22-sources.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/s2-tiger-2.4.22.jar" sourcepath="webapp/WEB-INF/lib/sources/s2-tiger-2.4.22-sources.jar"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/sa-struts-1.0.0.jar" sourcepath="webapp/WEB-INF/lib/sources/sa-struts-1.0.0-sources.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/sa-struts-1.0.1-rc1.jar" sourcepath="webapp/WEB-INF/lib/sources/sa-struts-1.0.1-rc1-sources.jar"/>
 	<classpathentry kind="output" path="target/test-classes"/>
 </classpath>

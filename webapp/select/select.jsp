@@ -11,6 +11,7 @@
 <html:option value="3">Three</html:option>
 </html:select>
 <br />
+${f:h(select)}<br />
 <input type="submit" name="submit" value="サブミット"/>
 </s:form>
 </body>

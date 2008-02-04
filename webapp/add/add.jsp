@@ -1,12 +1,12 @@
 <html>
 <head>
-<title>Textarea</title>
+<title>Add</title>
 </head>
 <body>
 <html:errors/>
-<s:form action="/textarea">
-<html:textarea property="textarea"/><br />
-${f:br(f:h(textarea))}<br />
+<s:form action="/add">
+<html:text property="arg1"/> + <html:text property="arg2"/>
+= ${f:h(result)}<br />
 <input type="submit" name="submit" value="サブミット"/>
 </s:form>
 </body>

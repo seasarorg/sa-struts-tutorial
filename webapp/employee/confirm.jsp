@@ -22,7 +22,8 @@
 <td>JobType</td><td>${f:h(jobType)}</td>
 </tr>
 <tr>
-<td>Salary</td><td>${f:h(salary)}</td>
+<td>Salary</td>
+<td><fmt:formatNumber value="${f:number(salary, '####')}" pattern="#,###"/></td>
 </tr>
 <tr>
 <td>Department</td><td>${f:h(departmentId)}</td>

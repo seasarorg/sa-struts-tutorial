@@ -9,6 +9,7 @@
 <html:radio property="radio" value="2"/>Two
 <html:radio property="radio" value="3"/>Three
 <br />
+${f:h(radio)}<br />
 <input type="submit" name="submit" value="サブミット"/>
 </s:form>
 </body>

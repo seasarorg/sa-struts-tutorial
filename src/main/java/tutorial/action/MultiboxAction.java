@@ -4,7 +4,7 @@ import org.seasar.struts.annotation.Execute;
 
 public class MultiboxAction {
 
-	public String[] checks;
+	public String[] checks = new String[0];
 
 	@Execute(validator = false)
 	public String index() {
