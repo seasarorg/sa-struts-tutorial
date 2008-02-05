@@ -8,7 +8,7 @@ public class TextareaAction {
 
 	@Execute(validator = false)
 	public String index() {
-		textarea = "初期値";
+		textarea = "initial value";
 		return "textarea.jsp";
 	}
 

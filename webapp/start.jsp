@@ -4,8 +4,26 @@
 <title>Welcome to Super Agile Struts</title>
 </head>
 <body>
+<p>
+Tomcatの設定はお済ですか?<br />
+まだなら、
+<a href="http://sastruts.seasar.org/fileReference.html#server">conf/server.xml</a>、
+<a href="http://sastruts.seasar.org/fileReference.html#defaultweb">conf/web.xml</a>
+をリンクの指示に従って修正してください。
+</p>
+<p>
+文字化けや、保護されたページでindex.jspが見つからないというエラーになる場合も
+上記の設定を確認してください。
+</p>
+<p>
+チュートリアルでは用意していませんが、
+アクションフォームやDtoをご自分で試されたときに、
+HOT deployがうまくいかない場合は
+<a href="http://sastruts.seasar.org/fileReference.html#context">conf/context.xml</a>
+の設定を確認してください。
+</p>
 <ul>
-<li><a href="http://sastruts.sandbox.seasar.org/index.html">ドキュメント</a></li>
+<li><a href="http://sastruts.seasar.org/index.html">SAStrutsのサイト</a></li>
 <li><a href="./add">足し算</a></li>
 <li><a href="./foreach">繰り返し</a></li>
 <li><a href="./foreachButton">ボタンを使った繰り返し</a></li>
