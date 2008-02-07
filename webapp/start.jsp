@@ -16,9 +16,7 @@ Tomcatの設定はお済ですか?<br />
 上記の設定を確認してください。
 </p>
 <p>
-チュートリアルでは用意していませんが、
-アクションフォームやDtoをご自分で試されたときに、
-HOT deployがうまくいかない場合は
+アクションフォームやDtoでHOT deployがうまくいかない場合は
 <a href="http://sastruts.seasar.org/fileReference.html#context">conf/context.xml</a>
 の設定を確認してください。
 </p>
@@ -42,6 +40,7 @@ HOT deployがうまくいかない場合は
 <li><a href="./token">トークンチェック</a></li>
 <li><a href="./upload">ファイルアップロード</a></li>
 <li><a href="./download">ファイルダウンロード</a></li>
+<li><a href="./form">アクションフォーム</a></li>
 <li><a href="./tiles">レイアウト</a></li>
 <li><a href="./protect">保護されたページ</a></li>
 <li><a href="./logout">ログアウト</a></li>
