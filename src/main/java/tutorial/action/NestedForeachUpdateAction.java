@@ -1,27 +1,27 @@
 package tutorial.action;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.entity.Employee;
-
 public class NestedForeachUpdateAction {
 
-	public List<List<Employee>> empItemsItems = new ArrayList<List<Employee>>();
+	public List<List<Map<String, Object>>> mapItemsItems = new ArrayList<List<Map<String, Object>>>();
 
 	@Execute(validator = false)
 	public String index() {
 		for (int i = 0; i < 10; i++) {
-			List<Employee> empItems = new ArrayList<Employee>();
+			List<Map<String, Object>> mapItems = new ArrayList<Map<String, Object>>();
 			for (int j = 0; j < 2; j++) {
-				Employee e = new Employee();
-				e.id = i * 10 + j;
-				e.name = "name" + i + j;
-				empItems.add(e);
+				Map<String, Object> m = new HashMap<String, Object>();
+				m.put("id", i * 10 + j);
+				m.put("name", "name" + i + j);
+				mapItems.add(m);
 			}
-			empItemsItems.add(empItems);
+			mapItemsItems.add(mapItems);
 		}
 		return "nestedForeachUpdate.jsp";
 	}

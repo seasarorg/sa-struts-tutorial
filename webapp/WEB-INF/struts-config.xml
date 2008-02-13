@@ -15,6 +15,9 @@
 
     <global-exceptions>
     	<exception path="/error/norole.jsp" key="errors.norole" type="org.seasar.struts.exception.NoRoleRuntimeException"/>
+    	<!--
+    	<exception path="/error/debug.jsp" key="errors.debug" type="java.lang.Exception"/>
+    	-->
     </global-exceptions>
 
 <!-- =================================== Global Forward Definitions -->

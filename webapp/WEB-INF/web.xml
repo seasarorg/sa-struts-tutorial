@@ -136,6 +136,11 @@ version="2.4">
     <welcome-file-list>
     </welcome-file-list>
     
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/error/debug.jsp</location>
+    </error-page>
+    
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>

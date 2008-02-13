@@ -6,18 +6,18 @@
 <html:errors/>
 <s:form action="/nestedForeachUpdate">
 <table border="1">
-<c:forEach var="empItems" varStatus="s" items="${empItemsItems}">
+<c:forEach var="mapItems" varStatus="s" items="${mapItemsItems}">
 <tr>
-<c:forEach var="emp" varStatus="s2" items="${empItems}">
+<c:forEach var="m" varStatus="s2" items="${mapItems}">
 <td>
 <input type="text"
-  name="empItemsItems[${s.index}][${s2.index}].id"
-  value="${f:h(emp.id)}"/>
+  name="mapItemsItems[${s.index}][${s2.index}].id"
+  value="${f:h(m.id)}"/>
 </td>
 <td>
 <input type="text"
-  name="empItemsItems[${s.index}][${s2.index}].name"
-  value="${f:h(emp.name)}"/>
+  name="mapItemsItems[${s.index}][${s2.index}].name"
+  value="${f:h(m.name)}"/>
 </td>
 </c:forEach>
 </tr>

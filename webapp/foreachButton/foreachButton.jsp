@@ -5,12 +5,12 @@
 <body>
 
 <table border="1">
-<c:forEach var="e" items="${empItems}">
+<c:forEach var="m" items="${mapItems}">
 <tr>
-<td><c:out value="${e.id}"/></td>
-<td><c:out value="${e.name}"/></td>
+<td><c:out value="${m.id}"/></td>
+<td><c:out value="${m.name}"/></td>
 <td>
-<form method="post" action="submit/${f:u(e.id)}">
+<form method="post" action="submit/${f:u(m.id)}">
 <input type="submit" value="結果ページへ"/>
 </form>
 </td>

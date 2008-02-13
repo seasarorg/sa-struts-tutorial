@@ -20,6 +20,12 @@ Tomcatの設定はお済ですか?<br />
 <a href="http://sastruts.seasar.org/fileReference.html#context">conf/context.xml</a>
 の設定を確認してください。
 </p>
+<p>
+リッチなエラーページで、スタックトレースのツリーを開いたときに
+ソースコードが表示されるようにするには、<br />
+Eclipseの更新サイト(http://eclipse.seasar.org/updates/3.3/)から
+ResourceSynchronizerをインストールして下さい。
+</p>
 <ul>
 <li><a href="http://sastruts.seasar.org/index.html">SAStrutsのサイト</a></li>
 <li><a href="./add">足し算</a></li>
@@ -44,6 +50,7 @@ Tomcatの設定はお済ですか?<br />
 <li><a href="./tiles">レイアウト</a></li>
 <li><a href="./protect">保護されたページ</a></li>
 <li><a href="./logout">ログアウト</a></li>
+<li><a href="./error">リッチなエラーページ</a></li>
 <li><a href="./employee">データベースを使ったサンプル</a></li>
 </ul>
 </body>

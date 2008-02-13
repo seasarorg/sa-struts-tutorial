@@ -6,10 +6,10 @@
 <html:errors/>
 <s:form action="/foreachUpdate">
 <table border="1">
-<c:forEach var="empItems" items="${empItems}">
+<c:forEach var="mapItems" items="${mapItems}">
 <tr>
-<td><html:text name="empItems" property="id" indexed="true"/></td>
-<td><html:text name="empItems" property="name" indexed="true"/></td>
+<td><html:text name="mapItems" property="id" indexed="true"/></td>
+<td><html:text name="mapItems" property="name" indexed="true"/></td>
 </tr>
 </c:forEach>
 </table><br />

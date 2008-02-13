@@ -5,11 +5,11 @@
 <body>
 
 <table border="1">
-<c:forEach var="empItems" items="${empItemsItems}">
+<c:forEach var="mapItems" items="${mapItemsItems}">
 <tr>
-<c:forEach var="emp" items="${empItems}">
-<td>${f:h(emp.id)}</td>
-<td>${f:h(emp.name)}</td>
+<c:forEach var="m" items="${mapItems}">
+<td>${f:h(m.id)}</td>
+<td>${f:h(m.name)}</td>
 </c:forEach>
 </tr>
 </c:forEach>
