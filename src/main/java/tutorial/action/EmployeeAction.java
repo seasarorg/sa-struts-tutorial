@@ -43,7 +43,6 @@ public class EmployeeAction {
 	public String index() {
 		empItems = jdbcManager
 			.from(Employee.class)
-			.leftOuterJoin("department")
 			.orderBy("id")
 			.getResultList();
 		return "list.jsp";
