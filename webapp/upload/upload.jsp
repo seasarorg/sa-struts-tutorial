@@ -3,6 +3,7 @@
 <title>Upload</title>
 </head>
 <body>
+<html:errors/>
 <html:messages id="m" message="true">
 ${f:h(m)}<br />
 </html:messages>

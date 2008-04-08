@@ -8,6 +8,7 @@ import java.io.OutputStream;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.fileupload.FileUploadBase.SizeLimitExceededException;
 import org.apache.struts.action.ActionMessage;
 import org.apache.struts.action.ActionMessages;
 import org.apache.struts.upload.FormFile;
@@ -16,6 +17,7 @@ import org.seasar.framework.container.annotation.tiger.BindingType;
 import org.seasar.framework.exception.IORuntimeException;
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.annotation.Required;
+import org.seasar.struts.upload.S2MultipartRequestHandler;
 import org.seasar.struts.util.ActionMessagesUtil;
 
 public class UploadAction {
@@ -24,7 +26,6 @@ public class UploadAction {
 	@Binding(bindingType = BindingType.NONE)
 	public FormFile formFile;
 
-	@Required
 	@Binding(bindingType = BindingType.NONE)
 	public FormFile[] formFiles;
 
@@ -34,6 +35,15 @@ public class UploadAction {
 
 	@Execute(validator = false)
 	public String index() {
+		SizeLimitExceededException e = (SizeLimitExceededException) request
+			.getAttribute(S2MultipartRequestHandler.SIZE_EXCEPTION_KEY);
+		if (e != null) {
+			ActionMessages errors = new ActionMessages();
+			errors.add(ActionMessages.GLOBAL_MESSAGE, new ActionMessage(
+				"errors.upload.size",
+				new Object[] { e.getPermittedSize(), e.getActualSize() }));
+			ActionMessagesUtil.addErrors(request, errors);
+		}
 		return "upload.jsp";
 	}
 
@@ -49,6 +59,9 @@ public class UploadAction {
 	}
 
 	protected void upload(FormFile file, ActionMessages messages) {
+		if (file.getFileSize() == 0) {
+			return;
+		}
 		String path = application.getRealPath("/WEB-INF/work/"
 			+ file.getFileName());
 		try {
