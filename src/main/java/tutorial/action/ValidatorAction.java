@@ -100,7 +100,7 @@ public class ValidatorAction {
 	public String maxbytelengthText;
 
 	@Required
-	@Mask(mask = "\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d", msg = @Msg(key = "errors.phone"))
+	@Mask(mask = "\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d", msg = @Msg(key = "errors.phone"), args = @Arg(key = "99-9999-9999", resource = false, position = 1))
 	public String phoneText;
 
 	public String validwhen1Text;
