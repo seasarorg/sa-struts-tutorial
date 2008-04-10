@@ -35,6 +35,7 @@ ResourceSynchronizerをインストールして下さい。
 <li><a href="./foreachUpdate">更新可能な繰り返し</a></li>
 <li><a href="./nestedForeachUpdate">更新可能なネストした繰り返し</a></li>
 <li><a href="./validator">バリデータ</a></li>
+<li><a href="./clientValidator">クライアントサイドバリデータ</a></li>
 <li><a href="./select">選択リスト</a></li>
 <li><a href="./multiselect">複数選択リスト</a></li>
 <li><a href="./checkbox">チェックボックス</a></li>
