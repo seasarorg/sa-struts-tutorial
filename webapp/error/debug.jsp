@@ -93,7 +93,7 @@ interface h {
 	Object o(Object key);
 }
 static Object escape(String value) {
-	return value.trim().replaceAll("\\\\","\\\\\\\\");
+	return value.trim().replaceAll("\\\\","\\\\\\\\").replaceAll("\n","\\\\n");
 }
 static String toValue(Object value) {
 	if(value instanceof String) {
