@@ -21,6 +21,11 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 version="2.4">
 
+    <context-param>
+        <param-name>sastruts.VIEW_PREFIX</param-name>
+        <param-value>/WEB-INF/jsp</param-value>
+    </context-param>
+    
     <filter>
         <filter-name>encodingfilter</filter-name>
         <filter-class>org.seasar.extension.filter.EncodingFilter</filter-class>
@@ -176,7 +181,7 @@ version="2.4">
     		<el-ignored>false</el-ignored>
     		<page-encoding>UTF-8</page-encoding>
     		<scripting-invalid>false</scripting-invalid>
-    		<include-prelude>/common/common.jsp</include-prelude>
+    		<include-prelude>/WEB-INF/jsp/common/common.jsp</include-prelude>
     	</jsp-property-group>
     </jsp-config>
 </web-app>
