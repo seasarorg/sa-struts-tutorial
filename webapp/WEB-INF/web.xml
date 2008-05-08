@@ -23,7 +23,7 @@ version="2.4">
 
     <context-param>
         <param-name>sastruts.VIEW_PREFIX</param-name>
-        <param-value>/jsp</param-value>
+        <param-value>/WEB-INF/jsp</param-value>
     </context-param>
     
     <filter>
@@ -133,9 +133,7 @@ version="2.4">
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
-        <!--
         <welcome-file>index.jsp</welcome-file>
-        -->
     </welcome-file-list>
 
     <!--  
