@@ -21,11 +21,11 @@ public class ForeachAction {
 			m.put("name", "name" + i);
 			mapItems.add(m);
 		}
-		return "foreach.jsp";
+		return "index.jsp";
 	}
 
-	@Execute(validator = false, urlPattern = "submit/{id}")
-	public String submit() {
+	@Execute(validator = false, urlPattern = "result/{id}")
+	public String result() {
 		return "result.jsp";
 	}
 }

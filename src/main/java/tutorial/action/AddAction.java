@@ -18,12 +18,12 @@ public class AddAction {
 
 	@Execute(validator = false)
 	public String index() {
-		return "add.jsp";
+		return "index.jsp";
 	}
 
-	@Execute(input = "add.jsp")
+	@Execute(input = "index.jsp")
 	public String submit() {
 		result = Integer.valueOf(arg1) + Integer.valueOf(arg2);
-		return "add.jsp";
+		return "index.jsp";
 	}
 }

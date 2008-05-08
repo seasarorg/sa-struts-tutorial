@@ -23,7 +23,7 @@ version="2.4">
 
     <context-param>
         <param-name>sastruts.VIEW_PREFIX</param-name>
-        <param-value>/WEB-INF/jsp</param-value>
+        <param-value>/jsp</param-value>
     </context-param>
     
     <filter>
@@ -130,10 +130,14 @@ version="2.4">
     </session-config>
 	-->
 
-    <!--
     <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <!--
+        <welcome-file>index.jsp</welcome-file>
+        -->
     </welcome-file-list>
-    -->
+
     <!--  
     <error-page>
         <exception-type>java.lang.Throwable</exception-type>
@@ -181,7 +185,7 @@ version="2.4">
     		<el-ignored>false</el-ignored>
     		<page-encoding>UTF-8</page-encoding>
     		<scripting-invalid>false</scripting-invalid>
-    		<include-prelude>/WEB-INF/jsp/common/common.jsp</include-prelude>
+    		<include-prelude>/jsp/common/common.jsp</include-prelude>
     	</jsp-property-group>
     </jsp-config>
 </web-app>
