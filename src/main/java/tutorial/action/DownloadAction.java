@@ -17,7 +17,7 @@ public class DownloadAction {
 
 	@Execute(validator = false)
 	public String index() {
-		return "download.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false)

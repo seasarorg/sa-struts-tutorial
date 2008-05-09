@@ -9,11 +9,11 @@ public class SelectAction {
 	@Execute(validator = false)
 	public String index() {
 		select = "3";
-		return "select.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "select.jsp";
+		return "index.jsp";
 	}
 }

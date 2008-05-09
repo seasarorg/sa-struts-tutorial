@@ -44,10 +44,10 @@ public class UploadAction {
 				new Object[] { e.getPermittedSize(), e.getActualSize() }));
 			ActionMessagesUtil.addErrors(request, errors);
 		}
-		return "upload.jsp";
+		return "index.jsp";
 	}
 
-	@Execute(input = "upload.jsp")
+	@Execute(input = "index.jsp")
 	public String upload() {
 		ActionMessages messages = new ActionMessages();
 		upload(formFile, messages);
@@ -55,7 +55,7 @@ public class UploadAction {
 			upload(file, messages);
 		}
 		ActionMessagesUtil.addMessages(request, messages);
-		return "upload.jsp";
+		return "index.jsp";
 	}
 
 	protected void upload(FormFile file, ActionMessages messages) {

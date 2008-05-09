@@ -11,11 +11,11 @@ public class CheckboxAction {
 	@Execute(validator = false)
 	public String index() {
 		check2 = true;
-		return "checkbox.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "checkbox.jsp";
+		return "index.jsp";
 	}
 }

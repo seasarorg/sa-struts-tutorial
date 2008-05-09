@@ -8,6 +8,6 @@ public class ConditionAction {
 
 	@Execute(validator = false, urlPattern = "{id}")
 	public String index() {
-		return "condition.jsp";
+		return "index.jsp";
 	}
 }

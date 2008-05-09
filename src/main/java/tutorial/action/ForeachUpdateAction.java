@@ -19,11 +19,11 @@ public class ForeachUpdateAction {
 			m.put("name", "name" + i);
 			mapItems.add(m);
 		}
-		return "foreachUpdate.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "foreachUpdate.jsp";
+		return "index.jsp";
 	}
 }

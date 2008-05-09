@@ -45,7 +45,7 @@ public class EmployeeAction {
 			.from(Employee.class)
 			.orderBy("id")
 			.getResultList();
-		return "list.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false, urlPattern = "edit/{id}")

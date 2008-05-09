@@ -9,11 +9,11 @@ public class MultiselectAction {
 	@Execute(validator = false)
 	public String index() {
 		select = new String[] { "2", "3" };
-		return "multiselect.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "multiselect.jsp";
+		return "index.jsp";
 	}
 }

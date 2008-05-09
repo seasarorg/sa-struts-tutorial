@@ -23,6 +23,6 @@ public class NestedForeachAction {
 			}
 			mapItemsItems.add(mapItems);
 		}
-		return "nestedForeach.jsp";
+		return "index.jsp";
 	}
 }

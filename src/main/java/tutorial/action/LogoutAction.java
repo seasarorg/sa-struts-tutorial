@@ -11,6 +11,6 @@ public class LogoutAction {
 	@Execute(validator = false)
 	public String index() {
 		session.invalidate();
-		return "logout.jsp";
+		return "index.jsp";
 	}
 }

@@ -12,10 +12,10 @@ public class FormAction {
 
 	@Execute(validator = false)
 	public String index() {
-		return "first.jsp";
+		return "index.jsp";
 	}
 
-	@Execute(input = "first.jsp")
+	@Execute(input = "index.jsp")
 	public String goSecond() {
 		return "second.jsp";
 	}

@@ -13,7 +13,7 @@ public class ProtectAction {
 		return "index.jsp";
 	}
 
-	@Execute(validator = false, input = "input.jsp", roles = "tomcat")
+	@Execute(validator = false, roles = "tomcat")
 	public String tomcat() {
 		return "tomcat.jsp";
 	}

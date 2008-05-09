@@ -9,11 +9,11 @@ public class RadioAction {
 	@Execute(validator = false)
 	public String index() {
 		radio = "3";
-		return "radio.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "radio.jsp";
+		return "index.jsp";
 	}
 }

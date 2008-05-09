@@ -13,16 +13,16 @@ public class ClientValidatorAction {
 
 	@Execute(validator = false)
 	public String index() {
-		return "clientValidator.jsp";
+		return "index.jsp";
 	}
 
-	@Execute(validator = true, input = "clientValidator.jsp")
+	@Execute(validator = true, input = "index.jsp")
 	public String submit() {
-		return "clientValidator.jsp";
+		return "index.jsp";
 	}
 
-	@Execute(validator = true, input = "clientValidator.jsp")
+	@Execute(validator = true, input = "index.jsp")
 	public String submit2() {
-		return "clientValidator.jsp";
+		return "index.jsp";
 	}
 }

@@ -14,11 +14,11 @@ public class TokenAction {
 	@Execute(validator = false)
 	public String index() {
 		TokenProcessor.getInstance().saveToken(request);
-		return "input.jsp";
+		return "index.jsp";
 	}
 
-	@Execute(validator = false, validate = "validate", input = "input.jsp")
-	public String submit() {
+	@Execute(validator = false, validate = "validate", input = "index.jsp")
+	public String result() {
 		return "result.jsp";
 	}
 

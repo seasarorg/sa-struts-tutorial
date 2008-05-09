@@ -23,7 +23,7 @@ version="2.4">
 
     <context-param>
         <param-name>sastruts.VIEW_PREFIX</param-name>
-        <param-value>/WEB-INF/jsp</param-value>
+        <param-value>/WEB-INF/view</param-value>
     </context-param>
     
     <filter>
@@ -172,8 +172,8 @@ version="2.4">
     <login-config>
         <auth-method>FORM</auth-method>
         <form-login-config>
-            <form-login-page>/login/login.html</form-login-page>
-            <form-error-page>/login/loginError.html</form-error-page>
+            <form-login-page>/WEB-INF/view/login/login.html</form-login-page>
+            <form-error-page>/WEB-INF/view/login/loginError.html</form-error-page>
         </form-login-config>
     </login-config>
     
@@ -183,7 +183,7 @@ version="2.4">
     		<el-ignored>false</el-ignored>
     		<page-encoding>UTF-8</page-encoding>
     		<scripting-invalid>false</scripting-invalid>
-    		<include-prelude>/jsp/common/common.jsp</include-prelude>
+    		<include-prelude>/WEB-INF/view/common/common.jsp</include-prelude>
     	</jsp-property-group>
     </jsp-config>
 </web-app>

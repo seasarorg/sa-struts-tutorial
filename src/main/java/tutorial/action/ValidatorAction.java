@@ -128,11 +128,11 @@ public class ValidatorAction {
 		minbytelengthText = "ああ";
 		maxbytelengthText = "あああああ";
 		phoneText = "03-9999-9999";
-		return "validator.jsp";
+		return "index.jsp";
 	}
 
-	@Execute(input = "validator.jsp")
+	@Execute(input = "index.jsp")
 	public String submit() {
-		return "validator.jsp";
+		return "index.jsp";
 	}
 }

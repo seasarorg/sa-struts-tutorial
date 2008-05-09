@@ -8,6 +8,6 @@ public class TilesAction {
 
 	@Execute(validator = false)
 	public String index() {
-		return "tiles.jsp";
+		return "index.jsp";
 	}
 }

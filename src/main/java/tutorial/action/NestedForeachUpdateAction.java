@@ -23,11 +23,11 @@ public class NestedForeachUpdateAction {
 			}
 			mapItemsItems.add(mapItems);
 		}
-		return "nestedForeachUpdate.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "nestedForeachUpdate.jsp";
+		return "index.jsp";
 	}
 }

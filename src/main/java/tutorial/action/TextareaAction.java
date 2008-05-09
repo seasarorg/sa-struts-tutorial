@@ -9,11 +9,11 @@ public class TextareaAction {
 	@Execute(validator = false)
 	public String index() {
 		textarea = "initial value";
-		return "textarea.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "textarea.jsp";
+		return "index.jsp";
 	}
 }

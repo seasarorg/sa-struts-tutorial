@@ -9,11 +9,11 @@ public class MultiboxAction {
 	@Execute(validator = false)
 	public String index() {
 		checks = new String[] { "Check1" };
-		return "multibox.jsp";
+		return "index.jsp";
 	}
 
 	@Execute(validator = false)
 	public String submit() {
-		return "multibox.jsp";
+		return "index.jsp";
 	}
 }
