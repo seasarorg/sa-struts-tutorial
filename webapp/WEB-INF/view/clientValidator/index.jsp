@@ -8,8 +8,10 @@
 <body>
 <html:errors/>
 <s:form action="/clientValidator">
-aaa:<html:text property="aaa"/><br />
-bbb:<html:text property="bbb"/><br />
+<table>
+<tr><td>aaa</td><td><html:text property="aaa"/></td></tr>
+<tr><td>bbb</td><td><html:text property="bbb"/></td></tr>
+</table>
 <input type="submit" name="submit" value="aaaが必須"
     onclick="forms[0].name='clientValidatorActionForm_submit';
         return validateClientValidatorActionForm_submit(forms[0]);"/>

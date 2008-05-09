@@ -24,7 +24,7 @@
 </tr>
 </c:forEach>
 </table><br />
-<input type="submit" name="submit" value="ãµãããã"/>
+<input type="submit" name="submit" value="サブミット"/>
 </s:form>
 </body>
 </html>
