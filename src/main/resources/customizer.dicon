@@ -26,7 +26,7 @@
         </initMethod>
     </component>
 	
-    <component name="logicCustomizer"
+    <component name="serviceCustomizer"
         class="org.seasar.framework.container.customizer.CustomizerChain">
         <initMethod name="addAspectCustomizer">
             <arg>"aop.traceInterceptor"</arg>
