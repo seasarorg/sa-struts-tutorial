@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/form">
+<s:form>
 <table>
 <tr><td>First</td><td>${f:h(first)}</td></tr>
 <tr><td>Second</td><td><html:text property="second"/></td></tr>

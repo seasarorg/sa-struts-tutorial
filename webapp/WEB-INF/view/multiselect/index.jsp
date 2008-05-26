@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/multiselect">
+<s:form>
 <html:select property="select" multiple="true" size="3">
 <html:option value="1">One</html:option>
 <html:option value="2">Two</html:option>

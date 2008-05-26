@@ -7,7 +7,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/clientValidator">
+<s:form>
 <table>
 <tr><td>aaa</td><td><html:text property="aaa"/></td></tr>
 <tr><td>bbb</td><td><html:text property="bbb"/></td></tr>

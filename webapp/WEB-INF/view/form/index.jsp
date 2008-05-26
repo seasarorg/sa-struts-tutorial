@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/form">
+<s:form>
 First:<html:text property="first"/><br />
 <input type="submit" name="goSecond" value="Secondへ"/>
 </s:form>

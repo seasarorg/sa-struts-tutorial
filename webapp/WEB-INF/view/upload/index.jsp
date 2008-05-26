@@ -9,7 +9,7 @@
 ${f:h(m)}<br />
 </html:messages>
 
-<s:form action="/upload" enctype="multipart/form-data">
+<s:form enctype="multipart/form-data">
 <input type="file" name="formFile" /><br />
 <c:forEach varStatus="s" begin="0" end="1">
 <input type="file" name="formFiles[${s.index}]" /><br />

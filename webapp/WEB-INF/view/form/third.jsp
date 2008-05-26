@@ -4,7 +4,7 @@
 <title>Form Third</title>
 </head>
 <body>
-<s:form action="/form">
+<s:form>
 <table>
 <tr><td>First</td><td>${f:h(first)}</td></tr>
 <tr><td>Second</td><td>${f:h(second)}</td></tr>

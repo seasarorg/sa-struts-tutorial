@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/select">
+<s:form>
 <html:select property="select">
 <html:option value="1">One</html:option>
 <html:option value="2">Two</html:option>

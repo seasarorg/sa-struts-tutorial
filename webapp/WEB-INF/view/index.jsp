@@ -36,8 +36,8 @@ Tomcatの設定はお済ですか?<br />
 <li><a href="multibox/">複数選択可能なチェックボックス</a></li>
 <li><a href="radio/">ラジオボタン</a></li>
 <li><a href="textarea/">テキストエリア</a></li>
-<li><a href="condition/1/">条件(id=1)</a></li>
-<li><a href="condition/2/">条件(id=2)</a></li>
+<li><a href="condition/1">条件(id=1)</a></li>
+<li><a href="condition/2">条件(id=2)</a></li>
 <li><a href="token/">トークンチェック</a></li>
 <li><a href="upload/">ファイルアップロード</a></li>
 <li><a href="download/">ファイルダウンロード</a></li>

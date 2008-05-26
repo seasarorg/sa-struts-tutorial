@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/radio">
+<s:form>
 <html:radio property="radio" value="1"/>One
 <html:radio property="radio" value="2"/>Two
 <html:radio property="radio" value="3"/>Three

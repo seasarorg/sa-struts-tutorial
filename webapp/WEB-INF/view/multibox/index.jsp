@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/multibox">
+<s:form>
 <html:multibox property="checks" value="Check1"/>Check1
 <html:multibox property="checks" value="Check2"/>Check2<br />
 ${f:h(checks)}<br />

@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/employee">
+<s:form>
 <html:hidden property="id"/>
 <html:hidden property="name"/>
 <html:hidden property="jobType"/>

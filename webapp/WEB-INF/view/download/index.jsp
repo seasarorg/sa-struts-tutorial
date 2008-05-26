@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/download">
+<s:form>
 <input type="submit" name="download" value="ダウンロード"/>
 </s:form>
 </body>

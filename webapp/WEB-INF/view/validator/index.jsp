@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/validator">
+<s:form>
 <table>
 <tr>
 <td>バイト:</td><td><html:text property="byteText"/></td>

@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/token">
+<s:form>
 <input type="submit" name="result" value="サブミット"/>
 </s:form>
 </body>

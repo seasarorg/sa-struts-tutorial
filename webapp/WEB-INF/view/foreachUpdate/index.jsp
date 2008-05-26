@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/foreachUpdate">
+<s:form>
 <table border="1">
 <c:forEach var="mapItems" items="${mapItems}">
 <tr>

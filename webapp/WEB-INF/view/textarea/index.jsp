@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/textarea">
+<s:form>
 <html:textarea property="textarea"/><br />
 ${f:br(f:h(textarea))}<br />
 <input type="submit" name="submit" value="サブミット"/>

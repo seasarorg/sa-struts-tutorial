@@ -6,7 +6,7 @@
 <body>
 <html:errors/>
 このページは、tomcatとrole1ユーザが表示できます。<br />
-<s:form action="/protect">
+<s:form>
 <input type="submit" name="tomcat"
   value="tomcatユーザだけが押せます"/>
 </s:form>

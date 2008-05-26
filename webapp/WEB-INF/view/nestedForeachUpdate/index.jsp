@@ -5,7 +5,7 @@
 </head>
 <body>
 <html:errors/>
-<s:form action="/nestedForeachUpdate">
+<s:form>
 <table border="1">
 <c:forEach var="mapItems" varStatus="s" items="${mapItemsItems}">
 <tr>
