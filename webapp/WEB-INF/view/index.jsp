@@ -5,6 +5,8 @@
 <title>Welcome to Super Agile Struts</title>
 </head>
 <body>
+<s:form>
+</s:form>
 <p>
 Tomcatの設定はお済ですか?<br />
 まだなら、
