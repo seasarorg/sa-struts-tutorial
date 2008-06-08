@@ -19,7 +19,7 @@
 <td>JobType</td>
 <td>
 <html:select property="jobType">
-<html:option value="CLERT">CLERK</html:option>
+<html:option value="CLERK">CLERK</html:option>
 <html:option value="SALESMAN">SALESMAN</html:option>
 <html:option value="MANAGER">MANAGER</html:option>
 <html:option value="ANALYST">ANALYST</html:option>
