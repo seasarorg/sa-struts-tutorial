@@ -8,8 +8,8 @@
 <table border="1">
 <c:forEach var="m" items="${mapItems}">
 <tr>
-<td><c:out value="${m.id}"/></td>
-<td><c:out value="${m.name}"/></td>
+<td>${f:h(m.id)}</td>
+<td>${f:h(m.name)}</td>
 <td>
 <s:form action="result/${f:u(m.id)}">
 <input type="submit" value="結果ページへ"/>
