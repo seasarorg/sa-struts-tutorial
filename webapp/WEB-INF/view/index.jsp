@@ -3,12 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Welcome to Super Agile Struts</title>
+
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
-<s:form>
-</s:form>
+
+<h1>Welcome to Super Agile Struts Tutorial</h1>
+
 <p>
-Tomcatの設定はお済ですか?<br />
+Tomcatの設定はお済みですか?<br />
 まだなら、
 <a href="http://sastruts.seasar.org/fileReference.html#server">conf/server.xml</a>
 をリンクの指示に従って修正してください。

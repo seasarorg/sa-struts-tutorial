@@ -1,9 +1,12 @@
 <%@page pageEncoding="UTF-8" %>
 <html>
 <head>
-<title>Employee List</title>
+<title>Tutorial: Employee List</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
+
 </head>
 <body>
+<h1>Tutorial: Employee List</h1>
 
 <table border="1">
 <tr style="background-color:pink">
