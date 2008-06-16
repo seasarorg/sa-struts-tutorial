@@ -1,9 +1,13 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Radio</title>
+<title>Tutorial: Radio</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
+
+<h1>Tutorial: Radio</h1>
+
 <html:errors/>
 <s:form>
 <html:radio property="radio" value="1"/>One

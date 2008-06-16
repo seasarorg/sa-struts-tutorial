@@ -1,9 +1,12 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>ForEach Update</title>
+<title>Tutorial: ForEach Update</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
+
+<h1>Tutorial: ForEach Update</h1>
 <html:errors/>
 <s:form>
 <table border="1">

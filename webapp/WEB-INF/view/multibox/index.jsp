@@ -1,9 +1,13 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Multibox</title>
+<title>Tutorial: Multibox</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
+
+<h1>Tutorial: Multibox</h1>
+
 <html:errors/>
 <s:form>
 <html:multibox property="checks" value="Check1"/>Check1

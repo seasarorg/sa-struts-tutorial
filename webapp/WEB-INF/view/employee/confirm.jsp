@@ -1,9 +1,13 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Employee Confirm</title>
+<title>Tutorial: Employee Confirm</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
+
+<h1>Tutorial: Employee Confirm</h1>
+
 <html:errors/>
 <s:form>
 <html:hidden property="id"/>

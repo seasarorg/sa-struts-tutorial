@@ -1,11 +1,11 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Validator</title>
+<title>Tutorial: Validator</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
 <h1>Tutorial: Validator</h1>
-<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 
 
 <html:errors/>

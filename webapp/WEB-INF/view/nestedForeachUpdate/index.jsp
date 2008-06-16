@@ -1,9 +1,13 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Nested ForEach Update</title>
+<title>Tutorial: Nested ForEach Update</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
+
+<h1>Tutorial: Nested ForEach Update</h1>
+
 <html:errors/>
 <s:form>
 <table border="1">

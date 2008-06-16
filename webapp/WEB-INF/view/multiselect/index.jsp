@@ -1,9 +1,13 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Multiselect</title>
+<title>Tutorial: Multiselect</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
+
+<h1>Tutorial: Multiselect</h1>
+
 <html:errors/>
 <s:form>
 <html:select property="select" multiple="true" size="3">

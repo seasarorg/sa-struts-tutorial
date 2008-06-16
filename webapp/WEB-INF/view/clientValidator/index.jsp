@@ -1,11 +1,15 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Client Validator</title>
 <html:javascript formName="clientValidatorActionForm_submit"/>
 <html:javascript formName="clientValidatorActionForm_submit2"/>
+<title>Tutorial: Client Validator</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
+
+<h1>Tutorial: Client Validator</h1>
+
 <html:errors/>
 <s:form>
 <table>

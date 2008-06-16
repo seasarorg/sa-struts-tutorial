@@ -1,9 +1,13 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Upload</title>
+<title>Tutorial: Upload</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
+
+<h1>Tutorial: Upload</h1>
+
 <html:errors/>
 <html:messages id="m" message="true">
 ${f:h(m)}<br />

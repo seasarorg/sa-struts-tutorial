@@ -1,9 +1,13 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Select</title>
+<title>Tutorial: Select</title>
+<link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
+
+<h1>Tutorial: Select</h1>
+
 <html:errors/>
 <s:form>
 <html:select property="select">
