@@ -14,8 +14,9 @@
 <td>${f:h(m.id)}</td>
 <td>${f:h(m.name)}</td>
 <td>
-<s:form action="result/${f:u(m.id)}">
-<input type="submit" value="結果ページへ"/>
+<s:form>
+<input type="hidden" name="id" value="${f:h(m.id)}"/>
+<input type="submit" name="result" value="結果ページへ"/>
 </s:form>
 </td>
 </tr>

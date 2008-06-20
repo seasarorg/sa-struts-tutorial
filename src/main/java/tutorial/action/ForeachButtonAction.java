@@ -24,7 +24,7 @@ public class ForeachButtonAction {
 		return "index.jsp";
 	}
 
-	@Execute(validator = false, urlPattern = "result/{id}")
+	@Execute(validator = false)
 	public String result() {
 		return "result.jsp";
 	}
