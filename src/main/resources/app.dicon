@@ -7,5 +7,7 @@
 	<include path="j2ee.dicon"/>
 	<include path="s2jdbc.dicon"/>
 	
+	<component name="hello">"Hello"</component>
+	<component name="hello2">"Hello2"</component>
 	<component name="actionMessagesThrowsInterceptor" class="org.seasar.struts.interceptor.ActionMessagesThrowsInterceptor"/>
 </components>

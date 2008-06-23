@@ -1,12 +1,14 @@
 package tutorial.action;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.seasar.struts.annotation.Execute;
 
 public class ProtectAction {
 
-	public HttpServletRequest request;
+	@Resource
+	protected HttpServletRequest request;
 
 	@Execute(validator = false)
 	public String index() {

@@ -1,15 +1,17 @@
 package tutorial.action;
 
+import javax.annotation.Resource;
+
+import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
-import org.seasar.struts.annotation.Required;
+
+import tutorial.dto.ClientValidatorDto;
 
 public class ClientValidatorAction {
 
-	@Required(target = "submit")
-	public String aaa;
-
-	@Required(target = "submit2")
-	public String bbb;
+	@ActionForm
+	@Resource
+	protected ClientValidatorDto clientValidatorDto;
 
 	@Execute(validator = false)
 	public String index() {

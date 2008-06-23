@@ -5,13 +5,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
+
+import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
+
+import tutorial.dto.ForeachDto;
 
 public class ForeachAction {
 
 	public List<Map<String, Object>> mapItems = new ArrayList<Map<String, Object>>();
 
-	public String id;
+	@ActionForm
+	@Resource
+	protected ForeachDto foreachDto;
 
 	@Execute(validator = false)
 	public String index() {

@@ -1,5 +1,6 @@
 package tutorial.action;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts.action.ActionMessage;
@@ -9,7 +10,8 @@ import org.seasar.struts.annotation.Execute;
 
 public class TokenAction {
 
-	public HttpServletRequest request;
+	@Resource
+	protected HttpServletRequest request;
 
 	@Execute(validator = false)
 	public String index() {

@@ -14,6 +14,7 @@
 <tr><td>Second</td><td>${f:h(second)}</td></tr>
 </table><br />
 <input type="submit" name="backSecond" value="戻る"/>
+<input type="submit" name="clear" value="クリアして最初の画面へ"/>
 </s:form>
 </body>
 </html>

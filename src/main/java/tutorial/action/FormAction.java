@@ -1,5 +1,8 @@
 package tutorial.action;
 
+import javax.annotation.Resource;
+
+import org.seasar.framework.aop.annotation.RemoveSession;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
@@ -8,7 +11,8 @@ import tutorial.dto.FormDto;
 public class FormAction {
 
 	@ActionForm
-	public FormDto formDto;
+	@Resource
+	protected FormDto formDto;
 
 	@Execute(validator = false)
 	public String index() {
@@ -28,5 +32,13 @@ public class FormAction {
 	@Execute(input = "second.jsp")
 	public String goThird() {
 		return "third.jsp";
+	}
+
+	@RemoveSession(name = "formDto")
+	@Execute(validator = false)
+	public String clear() {
+		formDto.first = null;
+		formDto.second = null;
+		return "index.jsp";
 	}
 }

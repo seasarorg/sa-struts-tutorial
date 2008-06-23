@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import javax.annotation.Resource;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
@@ -12,26 +13,25 @@ import org.apache.commons.fileupload.FileUploadBase.SizeLimitExceededException;
 import org.apache.struts.action.ActionMessage;
 import org.apache.struts.action.ActionMessages;
 import org.apache.struts.upload.FormFile;
-import org.seasar.framework.container.annotation.tiger.Binding;
-import org.seasar.framework.container.annotation.tiger.BindingType;
 import org.seasar.framework.exception.IORuntimeException;
+import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
-import org.seasar.struts.annotation.Required;
 import org.seasar.struts.upload.S2MultipartRequestHandler;
 import org.seasar.struts.util.ActionMessagesUtil;
 
+import tutorial.dto.UploadDto;
+
 public class UploadAction {
 
-	@Required
-	@Binding(bindingType = BindingType.NONE)
-	public FormFile formFile;
+	@ActionForm
+	@Resource
+	protected UploadDto uploadDto;
 
-	@Binding(bindingType = BindingType.NONE)
-	public FormFile[] formFiles;
+	@Resource
+	protected HttpServletRequest request;
 
-	public HttpServletRequest request;
-
-	public ServletContext application;
+	@Resource
+	protected ServletContext application;
 
 	@Execute(validator = false)
 	public String index() {
@@ -50,8 +50,8 @@ public class UploadAction {
 	@Execute(input = "index.jsp")
 	public String upload() {
 		ActionMessages messages = new ActionMessages();
-		upload(formFile, messages);
-		for (FormFile file : formFiles) {
+		upload(uploadDto.formFile, messages);
+		for (FormFile file : uploadDto.formFiles) {
 			upload(file, messages);
 		}
 		ActionMessagesUtil.addMessages(request, messages);

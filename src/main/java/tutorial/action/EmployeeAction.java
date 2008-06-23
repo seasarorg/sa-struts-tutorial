@@ -2,42 +2,29 @@ package tutorial.action;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import org.seasar.extension.jdbc.JdbcManager;
 import org.seasar.framework.beans.util.Beans;
+import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
-import org.seasar.struts.annotation.IntegerType;
-import org.seasar.struts.annotation.Required;
 
+import tutorial.dto.EmployeeDto;
 import tutorial.entity.Department;
 import tutorial.entity.Employee;
 
 public class EmployeeAction {
 
-	@Required
-	@IntegerType
-	public String id;
-
-	@Required
-	public String name;
-
-	@Required
-	public String jobType;
-
-	@IntegerType
-	public String salary;
-
-	@IntegerType
-	public String departmentId;
-
-	@Required
-	@IntegerType
-	public String version;
-
 	public List<Employee> empItems;
 
 	public List<Department> deptItems;
 
-	public JdbcManager jdbcManager;
+	@ActionForm
+	@Resource
+	protected EmployeeDto employeeDto;
+
+	@Resource
+	protected JdbcManager jdbcManager;
 
 	@Execute(validator = false)
 	public String index() {
@@ -52,9 +39,9 @@ public class EmployeeAction {
 	public String edit() {
 		Employee emp = jdbcManager
 			.from(Employee.class)
-			.id(id)
+			.id(employeeDto.id)
 			.getSingleResult();
-		Beans.copy(emp, this).execute();
+		Beans.copy(emp, employeeDto).execute();
 		deptItems = jdbcManager
 			.from(Department.class)
 			.orderBy("id")
@@ -69,7 +56,9 @@ public class EmployeeAction {
 
 	@Execute(input = "confirm.jsp")
 	public String store() {
-		Employee emp = Beans.createAndCopy(Employee.class, this).execute();
+		Employee emp = Beans
+			.createAndCopy(Employee.class, employeeDto)
+			.execute();
 		jdbcManager.update(emp).execute();
 		return index();
 	}

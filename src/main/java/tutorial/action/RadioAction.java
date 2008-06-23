@@ -1,14 +1,21 @@
 package tutorial.action;
 
+import javax.annotation.Resource;
+
+import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
+
+import tutorial.dto.RadioDto;
 
 public class RadioAction {
 
-	public String radio;
+	@ActionForm
+	@Resource
+	protected RadioDto radioDto;
 
 	@Execute(validator = false)
 	public String index() {
-		radio = "3";
+		radioDto.initialize();
 		return "index.jsp";
 	}
 

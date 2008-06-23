@@ -1,20 +1,19 @@
 package tutorial.action;
 
+import javax.annotation.Resource;
+
+import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
-import org.seasar.struts.annotation.IntegerType;
-import org.seasar.struts.annotation.Required;
+
+import tutorial.dto.AddDto;
 
 public class AddAction {
 
-	@Required
-	@IntegerType
-	public String arg1;
-
-	@Required
-	@IntegerType
-	public String arg2;
-
 	public Integer result;
+
+	@ActionForm
+	@Resource
+	protected AddDto addDto;
 
 	@Execute(validator = false)
 	public String index() {
@@ -23,7 +22,7 @@ public class AddAction {
 
 	@Execute(input = "index.jsp")
 	public String submit() {
-		result = Integer.valueOf(arg1) + Integer.valueOf(arg2);
+		result = Integer.valueOf(addDto.arg1) + Integer.valueOf(addDto.arg2);
 		return "index.jsp";
 	}
 }

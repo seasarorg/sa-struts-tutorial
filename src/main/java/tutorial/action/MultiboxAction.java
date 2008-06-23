@@ -1,14 +1,21 @@
 package tutorial.action;
 
+import javax.annotation.Resource;
+
+import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
+
+import tutorial.dto.MultiboxDto;
 
 public class MultiboxAction {
 
-	public String[] checks = new String[0];
+	@ActionForm
+	@Resource
+	protected MultiboxDto multiboxDto;
 
 	@Execute(validator = false)
 	public String index() {
-		checks = new String[] { "Check1" };
+		multiboxDto.initialize();
 		return "index.jsp";
 	}
 

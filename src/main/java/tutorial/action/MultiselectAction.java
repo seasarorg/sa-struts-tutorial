@@ -1,14 +1,21 @@
 package tutorial.action;
 
+import javax.annotation.Resource;
+
+import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
+
+import tutorial.dto.MultiselectDto;
 
 public class MultiselectAction {
 
-	public String[] select = new String[0];
+	@ActionForm
+	@Resource
+	protected MultiselectDto multiselectDto;
 
 	@Execute(validator = false)
 	public String index() {
-		select = new String[] { "2", "3" };
+		multiselectDto.initialize();
 		return "index.jsp";
 	}
 

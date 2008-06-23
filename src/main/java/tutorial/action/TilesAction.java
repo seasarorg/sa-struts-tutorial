@@ -1,10 +1,17 @@
 package tutorial.action;
 
+import javax.annotation.Resource;
+
+import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
+
+import tutorial.dto.TilesDto;
 
 public class TilesAction {
 
-	public String name = "Seasar2";
+	@ActionForm
+	@Resource
+	protected TilesDto tilesDto;
 
 	@Execute(validator = false)
 	public String index() {
