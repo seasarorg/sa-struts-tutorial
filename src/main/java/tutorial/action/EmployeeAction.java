@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.seasar.extension.jdbc.JdbcManager;
 import org.seasar.framework.beans.util.Beans;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
@@ -12,6 +11,8 @@ import org.seasar.struts.annotation.Execute;
 import tutorial.dto.EmployeeDto;
 import tutorial.entity.Department;
 import tutorial.entity.Employee;
+import tutorial.service.DepartmentService;
+import tutorial.service.EmployeeService;
 
 public class EmployeeAction {
 
@@ -24,28 +25,22 @@ public class EmployeeAction {
 	protected EmployeeDto employeeDto;
 
 	@Resource
-	protected JdbcManager jdbcManager;
+	protected EmployeeService employeeService;
+
+	@Resource
+	protected DepartmentService departmentService;
 
 	@Execute(validator = false)
 	public String index() {
-		empItems = jdbcManager
-			.from(Employee.class)
-			.orderBy("id")
-			.getResultList();
+		empItems = employeeService.findAll();
 		return "index.jsp";
 	}
 
 	@Execute(validator = false, urlPattern = "edit/{id}")
 	public String edit() {
-		Employee emp = jdbcManager
-			.from(Employee.class)
-			.id(employeeDto.id)
-			.getSingleResult();
+		Employee emp = employeeService.findById(employeeDto.id);
 		Beans.copy(emp, employeeDto).execute();
-		deptItems = jdbcManager
-			.from(Department.class)
-			.orderBy("id")
-			.getResultList();
+		deptItems = departmentService.findAll();
 		return "edit.jsp";
 	}
 
@@ -59,16 +54,13 @@ public class EmployeeAction {
 		Employee emp = Beans
 			.createAndCopy(Employee.class, employeeDto)
 			.execute();
-		jdbcManager.update(emp).execute();
+		employeeService.update(emp);
 		return index();
 	}
 
 	@Execute(validator = false)
 	public String backToEdit() {
-		deptItems = jdbcManager
-			.from(Department.class)
-			.orderBy("id")
-			.getResultList();
+		deptItems = departmentService.findAll();
 		return "edit.jsp";
 	}
 }
