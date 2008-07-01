@@ -2,7 +2,6 @@ package tutorial.action;
 
 import javax.annotation.Resource;
 
-import org.seasar.framework.aop.annotation.RemoveSession;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
@@ -34,11 +33,8 @@ public class FormAction {
 		return "third.jsp";
 	}
 
-	@RemoveSession(name = "formDto")
-	@Execute(validator = false)
+	@Execute(validator = false, removeActionForm = true)
 	public String clear() {
-		formDto.first = null;
-		formDto.second = null;
 		return "index.jsp";
 	}
 }
