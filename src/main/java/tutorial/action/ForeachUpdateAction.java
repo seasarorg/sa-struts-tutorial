@@ -5,17 +5,17 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.ForeachUpdateDto;
+import tutorial.form.ForeachUpdateForm;
 
 public class ForeachUpdateAction {
 
 	@ActionForm
 	@Resource
-	protected ForeachUpdateDto foreachUpdateDto;
+	protected ForeachUpdateForm foreachUpdateForm;
 
 	@Execute(validator = false)
 	public String index() {
-		foreachUpdateDto.initialize();
+		foreachUpdateForm.initialize();
 		return "index.jsp";
 	}
 

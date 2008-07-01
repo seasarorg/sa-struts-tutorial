@@ -19,13 +19,13 @@ import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.upload.S2MultipartRequestHandler;
 import org.seasar.struts.util.ActionMessagesUtil;
 
-import tutorial.dto.UploadDto;
+import tutorial.form.UploadForm;
 
 public class UploadAction {
 
 	@ActionForm
 	@Resource
-	protected UploadDto uploadDto;
+	protected UploadForm uploadForm;
 
 	@Resource
 	protected HttpServletRequest request;
@@ -50,8 +50,8 @@ public class UploadAction {
 	@Execute(input = "index.jsp")
 	public String upload() {
 		ActionMessages messages = new ActionMessages();
-		upload(uploadDto.formFile, messages);
-		for (FormFile file : uploadDto.formFiles) {
+		upload(uploadForm.formFile, messages);
+		for (FormFile file : uploadForm.formFiles) {
 			upload(file, messages);
 		}
 		ActionMessagesUtil.addMessages(request, messages);

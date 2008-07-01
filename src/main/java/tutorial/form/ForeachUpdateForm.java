@@ -1,11 +1,11 @@
-package tutorial.dto;
+package tutorial.form;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ForeachUpdateDto {
+public class ForeachUpdateForm {
 
 	public List<Map<String, Object>> mapItems = new ArrayList<Map<String, Object>>();
 

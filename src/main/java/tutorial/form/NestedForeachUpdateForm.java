@@ -1,11 +1,11 @@
-package tutorial.dto;
+package tutorial.form;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class NestedForeachUpdateDto {
+public class NestedForeachUpdateForm {
 
 	public List<List<Map<String, Object>>> mapItemsItems = new ArrayList<List<Map<String, Object>>>();
 

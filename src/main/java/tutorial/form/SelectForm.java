@@ -1,6 +1,6 @@
-package tutorial.dto;
+package tutorial.form;
 
-public class SelectDto {
+public class SelectForm {
 
 	public String select;
 

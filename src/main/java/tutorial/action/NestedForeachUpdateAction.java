@@ -5,17 +5,17 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.NestedForeachUpdateDto;
+import tutorial.form.NestedForeachUpdateForm;
 
 public class NestedForeachUpdateAction {
 
 	@ActionForm
 	@Resource
-	protected NestedForeachUpdateDto nestedForeachUpdateDto;
+	protected NestedForeachUpdateForm nestedForeachUpdateForm;
 
 	@Execute(validator = false)
 	public String index() {
-		nestedForeachUpdateDto.initialize();
+		nestedForeachUpdateForm.initialize();
 		return "index.jsp";
 	}
 

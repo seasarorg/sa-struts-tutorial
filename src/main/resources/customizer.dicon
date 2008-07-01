@@ -25,6 +25,10 @@
             </arg>
         </initMethod>
     </component>
+    
+    <component name="formCustomizer"
+        class="org.seasar.framework.container.customizer.CustomizerChain">
+    </component>
 	
     <component name="serviceCustomizer"
         class="org.seasar.framework.container.customizer.CustomizerChain">

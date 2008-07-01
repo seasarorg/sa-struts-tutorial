@@ -5,17 +5,17 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.CheckboxDto;
+import tutorial.form.CheckboxForm;
 
 public class CheckboxAction {
 
 	@ActionForm
 	@Resource
-	protected CheckboxDto checkboxDto;
+	protected CheckboxForm checkboxForm;
 
 	@Execute(validator = false)
 	public String index() {
-		checkboxDto.initialize();
+		checkboxForm.initialize();
 		return "index.jsp";
 	}
 

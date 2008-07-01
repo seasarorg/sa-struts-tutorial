@@ -1,4 +1,4 @@
-package tutorial.dto;
+package tutorial.form;
 
 import java.io.Serializable;
 
@@ -7,7 +7,7 @@ import org.seasar.framework.container.annotation.tiger.InstanceType;
 import org.seasar.struts.annotation.Required;
 
 @Component(instance = InstanceType.SESSION)
-public class FormDto implements Serializable {
+public class FormForm implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 

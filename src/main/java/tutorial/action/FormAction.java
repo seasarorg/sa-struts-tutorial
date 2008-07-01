@@ -5,13 +5,13 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.FormDto;
+import tutorial.form.FormForm;
 
 public class FormAction {
 
 	@ActionForm
 	@Resource
-	protected FormDto formDto;
+	protected FormForm formForm;
 
 	@Execute(validator = false)
 	public String index() {

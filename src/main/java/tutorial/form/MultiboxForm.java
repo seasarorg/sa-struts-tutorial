@@ -1,6 +1,6 @@
-package tutorial.dto;
+package tutorial.form;
 
-public class MultiboxDto {
+public class MultiboxForm {
 
 	public String[] checks = new String[0];
 

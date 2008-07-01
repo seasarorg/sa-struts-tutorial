@@ -1,4 +1,4 @@
-package tutorial.dto;
+package tutorial.form;
 
 import org.seasar.struts.annotation.Arg;
 import org.seasar.struts.annotation.ByteType;
@@ -24,7 +24,7 @@ import org.seasar.struts.annotation.ShortType;
 import org.seasar.struts.annotation.UrlType;
 import org.seasar.struts.annotation.Validwhen;
 
-public class ValidatorDto {
+public class ValidatorForm {
 
 	@Required
 	@ByteType

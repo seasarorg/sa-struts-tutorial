@@ -8,9 +8,9 @@ import org.seasar.framework.beans.util.Beans;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.EmployeeDto;
 import tutorial.entity.Department;
 import tutorial.entity.Employee;
+import tutorial.form.EmployeeForm;
 import tutorial.service.DepartmentService;
 import tutorial.service.EmployeeService;
 
@@ -22,7 +22,7 @@ public class EmployeeAction {
 
 	@ActionForm
 	@Resource
-	protected EmployeeDto employeeDto;
+	protected EmployeeForm employeeForm;
 
 	@Resource
 	protected EmployeeService employeeService;
@@ -38,8 +38,8 @@ public class EmployeeAction {
 
 	@Execute(validator = false, urlPattern = "edit/{id}")
 	public String edit() {
-		Employee emp = employeeService.findById(employeeDto.id);
-		Beans.copy(emp, employeeDto).execute();
+		Employee emp = employeeService.findById(employeeForm.id);
+		Beans.copy(emp, employeeForm).execute();
 		deptItems = departmentService.findAll();
 		return "edit.jsp";
 	}
@@ -52,7 +52,7 @@ public class EmployeeAction {
 	@Execute(input = "confirm.jsp")
 	public String store() {
 		Employee emp = Beans
-			.createAndCopy(Employee.class, employeeDto)
+			.createAndCopy(Employee.class, employeeForm)
 			.execute();
 		employeeService.update(emp);
 		return index();

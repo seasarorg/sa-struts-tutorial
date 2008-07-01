@@ -5,7 +5,7 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.AddDto;
+import tutorial.form.AddForm;
 
 public class AddAction {
 
@@ -13,7 +13,7 @@ public class AddAction {
 
 	@ActionForm
 	@Resource
-	protected AddDto addDto;
+	protected AddForm addForm;
 
 	@Execute(validator = false)
 	public String index() {
@@ -22,7 +22,7 @@ public class AddAction {
 
 	@Execute(input = "index.jsp")
 	public String submit() {
-		result = Integer.valueOf(addDto.arg1) + Integer.valueOf(addDto.arg2);
+		result = Integer.valueOf(addForm.arg1) + Integer.valueOf(addForm.arg2);
 		return "index.jsp";
 	}
 }

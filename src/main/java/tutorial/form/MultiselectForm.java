@@ -1,6 +1,6 @@
-package tutorial.dto;
+package tutorial.form;
 
-public class MultiselectDto {
+public class MultiselectForm {
 
 	public String[] select = new String[0];
 

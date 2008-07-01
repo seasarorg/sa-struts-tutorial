@@ -1,9 +1,9 @@
-package tutorial.dto;
+package tutorial.form;
 
 import org.seasar.struts.annotation.IntegerType;
 import org.seasar.struts.annotation.Required;
 
-public class AddDto {
+public class AddForm {
 
 	@Required
 	@IntegerType

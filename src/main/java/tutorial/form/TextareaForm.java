@@ -1,6 +1,6 @@
-package tutorial.dto;
+package tutorial.form;
 
-public class TextareaDto {
+public class TextareaForm {
 
 	public String textarea;
 

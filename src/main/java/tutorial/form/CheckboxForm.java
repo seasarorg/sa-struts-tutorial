@@ -1,6 +1,6 @@
-package tutorial.dto;
+package tutorial.form;
 
-public class CheckboxDto {
+public class CheckboxForm {
 
 	public boolean check1;
 

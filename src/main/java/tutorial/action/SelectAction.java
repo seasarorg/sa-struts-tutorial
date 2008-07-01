@@ -5,17 +5,17 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.SelectDto;
+import tutorial.form.SelectForm;
 
 public class SelectAction {
 
 	@ActionForm
 	@Resource
-	protected SelectDto selectDto;
+	protected SelectForm selectForm;
 
 	@Execute(validator = false)
 	public String index() {
-		selectDto.initialize();
+		selectForm.initialize();
 		return "index.jsp";
 	}
 

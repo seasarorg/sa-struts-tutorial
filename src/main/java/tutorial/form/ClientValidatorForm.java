@@ -1,8 +1,8 @@
-package tutorial.dto;
+package tutorial.form;
 
 import org.seasar.struts.annotation.Required;
 
-public class ClientValidatorDto {
+public class ClientValidatorForm {
 
 	@Required(target = "submit")
 	public String aaa;

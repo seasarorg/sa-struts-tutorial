@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.ForeachDto;
+import tutorial.form.ForeachForm;
 
 public class ForeachAction {
 
@@ -18,7 +18,7 @@ public class ForeachAction {
 
 	@ActionForm
 	@Resource
-	protected ForeachDto foreachDto;
+	protected ForeachForm foreachForm;
 
 	@Execute(validator = false)
 	public String index() {

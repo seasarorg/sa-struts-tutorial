@@ -5,17 +5,17 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.MultiselectDto;
+import tutorial.form.MultiselectForm;
 
 public class MultiselectAction {
 
 	@ActionForm
 	@Resource
-	protected MultiselectDto multiselectDto;
+	protected MultiselectForm multiselectForm;
 
 	@Execute(validator = false)
 	public String index() {
-		multiselectDto.initialize();
+		multiselectForm.initialize();
 		return "index.jsp";
 	}
 

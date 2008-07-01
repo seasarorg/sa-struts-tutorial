@@ -5,17 +5,17 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.ValidatorDto;
+import tutorial.form.ValidatorForm;
 
 public class ValidatorAction {
 
 	@ActionForm
 	@Resource
-	protected ValidatorDto validatorDto;
+	protected ValidatorForm validatorForm;
 
 	@Execute(validator = false)
 	public String index() {
-		validatorDto.initialize();
+		validatorForm.initialize();
 		return "index.jsp";
 	}
 

@@ -5,17 +5,17 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.dto.MultiboxDto;
+import tutorial.form.MultiboxForm;
 
 public class MultiboxAction {
 
 	@ActionForm
 	@Resource
-	protected MultiboxDto multiboxDto;
+	protected MultiboxForm multiboxForm;
 
 	@Execute(validator = false)
 	public String index() {
-		multiboxDto.initialize();
+		multiboxForm.initialize();
 		return "index.jsp";
 	}
 
