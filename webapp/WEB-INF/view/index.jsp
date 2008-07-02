@@ -46,7 +46,7 @@ Tomcatの設定はお済みですか?<br />
 <li><a href="token/">トークンチェック</a></li>
 <li><a href="upload/">ファイルアップロード</a></li>
 <li><a href="download/">ファイルダウンロード</a></li>
-<li><a href="form/">アクションフォーム</a></li>
+<li><a href="sessionForm/">セッションを使ったフォーム</a></li>
 <li><a href="tiles/">レイアウト</a></li>
 <li><a href="protect/">保護されたページ</a></li>
 <li><a href="logout/">ログアウト</a></li>

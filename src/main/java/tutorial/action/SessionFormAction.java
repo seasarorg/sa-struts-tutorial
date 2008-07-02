@@ -5,13 +5,13 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 
-import tutorial.form.FormForm;
+import tutorial.form.SessionFormForm;
 
-public class FormAction {
+public class SessionFormAction {
 
 	@ActionForm
 	@Resource
-	protected FormForm formForm;
+	protected SessionFormForm sessionFormForm;
 
 	@Execute(validator = false)
 	public String index() {

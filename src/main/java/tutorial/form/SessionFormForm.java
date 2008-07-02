@@ -7,7 +7,7 @@ import org.seasar.framework.container.annotation.tiger.InstanceType;
 import org.seasar.struts.annotation.Required;
 
 @Component(instance = InstanceType.SESSION)
-public class FormForm implements Serializable {
+public class SessionFormForm implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
