@@ -38,7 +38,8 @@ public class EmployeeAction {
 
 	@Execute(validator = false, urlPattern = "edit/{id}")
 	public String edit() {
-		Employee emp = employeeService.findById(employeeForm.id);
+		Employee emp = employeeService.findById(Integer
+			.valueOf(employeeForm.id));
 		Beans.copy(emp, employeeForm).execute();
 		deptItems = departmentService.findAll();
 		return "edit.jsp";
