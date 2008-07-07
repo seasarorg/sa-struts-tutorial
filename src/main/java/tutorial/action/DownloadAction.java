@@ -1,13 +1,13 @@
 package tutorial.action;
 
 import java.io.IOException;
-import java.io.OutputStream;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 
 import org.seasar.framework.exception.IORuntimeException;
 import org.seasar.struts.annotation.Execute;
+import org.seasar.struts.util.ResponseUtil;
 
 public class DownloadAction {
 
@@ -22,16 +22,9 @@ public class DownloadAction {
 	@Execute(validator = false)
 	public String download() {
 		try {
-			response.setContentType("application/octet-stream");
-			response.setHeader("Content-disposition", "attachment; filename=\""
-				+ new String("サンプル.txt".getBytes("Shift_JIS"), "ISO-8859-1")
-				+ "\"");
-			OutputStream out = response.getOutputStream();
-			try {
-				out.write("こんにちは".getBytes());
-			} finally {
-				out.close();
-			}
+			ResponseUtil.download(new String(
+				"サンプル.txt".getBytes("Shift_JIS"),
+				"ISO-8859-1"), "こんにちは".getBytes());
 		} catch (IOException e) {
 			throw new IORuntimeException(e);
 		}
