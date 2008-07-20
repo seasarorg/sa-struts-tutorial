@@ -1,12 +1,12 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Tutorial: ForEach Button</title>
+<title>Tutorial: Foreach Button</title>
 <link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
 
-<h1>Tutorial: ForEach Button</h1>
+<h1>Tutorial: Foreach Button</h1>
 
 <table border="1">
 <c:forEach var="m" items="${mapItems}">
