@@ -1,12 +1,12 @@
 <%@page pageEncoding="UTF-8"%>
 <html>
 <head>
-<title>Tutorial: ForEach</title>
+<title>Tutorial: Foreach</title>
 <link rel="stylesheet" type="text/css" href="${f:url('/css/sa.css')}" />
 </head>
 <body>
 
-<h1>Tutorial: ForEach</h1>
+<h1>Tutorial: Foreach</h1>
 
 
 <table border="1">
