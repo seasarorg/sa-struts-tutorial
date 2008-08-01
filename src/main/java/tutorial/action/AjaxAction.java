@@ -12,7 +12,7 @@ public class AjaxAction {
 
 	@Execute(validator = false)
 	public String hello() {
-		ResponseUtil.write("こんにちわ");
+		ResponseUtil.write("こんにちは");
 		return null;
 	}
 }
