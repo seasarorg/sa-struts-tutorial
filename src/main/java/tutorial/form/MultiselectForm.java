@@ -1,10 +1,29 @@
 package tutorial.form;
 
-public class MultiselectForm {
+import java.io.Serializable;
 
-	public String[] select = new String[0];
+import org.seasar.framework.container.annotation.tiger.Component;
+import org.seasar.framework.container.annotation.tiger.InstanceType;
+
+@Component(instance = InstanceType.SESSION)
+public class MultiselectForm implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	public String[] select;
+
+	public String[] select2;
 
 	public void initialize() {
 		select = new String[] { "2", "3" };
+		select2 = new String[0];
+	}
+
+	public void reset() {
+		select = new String[0];
+	}
+
+	public void reset2() {
+		select2 = new String[0];
 	}
 }
