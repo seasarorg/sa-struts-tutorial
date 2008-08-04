@@ -7,7 +7,7 @@
 <body>
 
 <h1>Tutorial: Add</h1>
-${hello}
+
 <html:errors/>
 <s:form>
 <html:text property="arg1"/> +

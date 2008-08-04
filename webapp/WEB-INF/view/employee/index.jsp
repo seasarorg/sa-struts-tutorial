@@ -19,7 +19,7 @@
 <td>${f:h(e.jobType)}</td>
 <td align="right"><fmt:formatNumber value="${e.salary}" pattern="#,##0"/></td>
 <td align="right">${f:h(e.departmentId)}</td>
-<td><a href="edit/${f:u(e.id)}">編集</a></td>
+<td><s:link href="edit/${f:u(e.id)}">編集</s:link></td>
 </tr>
 </c:forEach>
 </table>
