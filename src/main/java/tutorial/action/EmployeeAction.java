@@ -50,13 +50,13 @@ public class EmployeeAction {
 		return "confirm.jsp";
 	}
 
-	@Execute(input = "confirm.jsp")
+	@Execute(input = "confirm.jsp", redirect = true)
 	public String store() {
 		Employee emp = Beans
 			.createAndCopy(Employee.class, employeeForm)
 			.execute();
 		employeeService.update(emp);
-		return index();
+		return "/employee/";
 	}
 
 	@Execute(validator = false)
