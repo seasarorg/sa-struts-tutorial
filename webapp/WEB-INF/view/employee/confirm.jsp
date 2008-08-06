@@ -31,7 +31,7 @@
 <td><fmt:formatNumber value="${f:number(salary, '####')}" pattern="#,###"/></td>
 </tr>
 <tr>
-<td>Department</td><td>${f:h(departmentId)}</td>
+<td>Department</td><td>${f:h(departmentName)}</td>
 </tr>
 </table>
 <input type="submit" name="store" value="更新"/>

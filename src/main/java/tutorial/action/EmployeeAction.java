@@ -20,6 +20,8 @@ public class EmployeeAction {
 
 	public List<Department> deptItems;
 
+	public String departmentName;
+
 	@ActionForm
 	@Resource
 	protected EmployeeForm employeeForm;
@@ -33,6 +35,7 @@ public class EmployeeAction {
 	@Execute(validator = false)
 	public String index() {
 		empItems = employeeService.findAll();
+		deptItems = departmentService.findAll();
 		return "index.jsp";
 	}
 
@@ -47,6 +50,8 @@ public class EmployeeAction {
 
 	@Execute(input = "backToEdit")
 	public String confirm() {
+		departmentName = departmentService.findById(Integer
+			.valueOf(employeeForm.departmentId)).name;
 		return "confirm.jsp";
 	}
 
