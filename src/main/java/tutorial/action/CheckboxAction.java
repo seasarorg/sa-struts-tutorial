@@ -19,8 +19,8 @@ public class CheckboxAction {
 		return "index.jsp";
 	}
 
-	@Execute(validator = false)
+	@Execute(validator = false, reset = "reset")
 	public String submit() {
-		return "index.jsp";
+		return "submit.jsp";
 	}
 }

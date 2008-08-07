@@ -10,8 +10,8 @@
 
 <html:errors/>
 <s:form>
-select:<br />
-<html:select property="select" multiple="true" size="3">
+select1:<br />
+<html:select property="select1" multiple="true" size="3">
 <html:option value="1">One</html:option>
 <html:option value="2">Two</html:option>
 <html:option value="3">Three</html:option>

@@ -10,7 +10,7 @@
 
 <html:errors/>
 <s:form>
-select:${f:h(select)}<br />
+select1:${f:h(select1)}<br />
 select2:<br />
 <html:select property="select2" multiple="true" size="3">
 <c:forEach var="v" items="${select2List}">
