@@ -1,15 +1,15 @@
 <project name="sa-struts-tutorial" default="copy" basedir=".">
-	<property name="s2ver" value="2.4.26"/>
-	<property name="ver" value="1.0.4-rc1"/>
+	<property name="s2ver" value="2.4.27"/>
+	<property name="ver" value="1.0.4"/>
 	<target name="copy">
 		<copy todir="webapp/WEB-INF/lib" file="../s2jdbc-tutorial/lib/s2-framework-${s2ver}.jar"/>
 		<copy todir="webapp/WEB-INF/lib" file="../s2jdbc-tutorial/lib/s2-extension-${s2ver}.jar"/>
 		<copy todir="webapp/WEB-INF/lib" file="../s2jdbc-tutorial/lib/s2-tiger-${s2ver}.jar"/>
 		<copy todir="webapp/WEB-INF/lib" file="../sa-struts/target/sa-struts-${ver}.jar"/>
-		<copy todir="webapp/WEB-INF/lib/sources" file="../s2jdbc-tutorial/lib/sources/s2-framework-${s2ver}-sources.jar"/>
-		<copy todir="webapp/WEB-INF/lib/sources" file="../s2jdbc-tutorial/lib/sources/s2-extension-${s2ver}-sources.jar"/>
-	    <copy todir="webapp/WEB-INF/lib/sources" file="../s2jdbc-tutorial/lib/sources/s2-tiger-${s2ver}-sources.jar"/>
-	    <copy todir="webapp/WEB-INF/lib/sources" file="../sa-struts/target/sa-struts-${ver}-sources.jar"/>		
+		<copy todir="webapp/WEB-INF/libsrc" file="../s2jdbc-tutorial/lib/sources/s2-framework-${s2ver}-sources.jar"/>
+		<copy todir="webapp/WEB-INF/libsrc" file="../s2jdbc-tutorial/lib/sources/s2-extension-${s2ver}-sources.jar"/>
+	    <copy todir="webapp/WEB-INF/libsrc" file="../s2jdbc-tutorial/lib/sources/s2-tiger-${s2ver}-sources.jar"/>
+	    <copy todir="webapp/WEB-INF/libsrc" file="../sa-struts/target/sa-struts-${ver}-sources.jar"/>		
 	</target>
 	
 	<target name="dist">

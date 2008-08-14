@@ -28,7 +28,7 @@ Tomcatの設定はお済みですか?<br />
 <ul>
 <li><a href="http://sastruts.seasar.org/index.html">SAStrutsのサイト</a></li>
 <li><a href="add/">足し算</a></li>
-<li><a href="session/">セッション管理のアクションフォーム</a></li>
+<li><a href="session/">セッションスコープのアクションフォーム</a></li>
 <li><a href="redirect/">他のサイトを表示</a></li>
 <li><a href="foreach/">繰り返し</a></li>
 <li><a href="foreachButton/">ボタンを使った繰り返し</a></li>
