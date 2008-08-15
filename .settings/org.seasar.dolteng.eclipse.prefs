@@ -1,11 +1,10 @@
-#Fri Aug 15 16:14:16 JST 2008
+#Fri Aug 15 16:40:13 JST 2008
 DaoType=S2JDBC
 DefaultResourcePath=/sa-struts-tutorial/src/main/resources
 DefaultRootPackage=tutorial
 DefaultSrcPath=/sa-struts-tutorial/src/main/java
 ServletPath=/sa-struts-tutorial
-UseDIMarker=false
-UsePageMarker=false
 ViewType=SA-Struts
 WebContentsRoot=src/main/webapp/
 eclipse.preferences.version=1
+isUsePublicField=true
