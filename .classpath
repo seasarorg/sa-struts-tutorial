@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-<classpathentry kind="src" output="src/main/webapp/WEB-INF/classes" path="src/main/java"/>
+	<classpathentry kind="src" output="src/main/webapp/WEB-INF/classes" path="src/main/java"/>
 	<classpathentry kind="src" output="src/main/webapp/WEB-INF/classes" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/test/resources"/>
@@ -36,5 +36,6 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-framework-2.4.27.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-framework-2.4.27-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-tiger-2.4.27.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-tiger-2.4.27-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/sa-struts-1.0.4.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/sa-struts-1.0.4-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/hsqldb-1.8.0.1.jar"/>
 	<classpathentry kind="output" path="target/test-classes"/>
 </classpath>
