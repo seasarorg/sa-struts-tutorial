@@ -12,8 +12,8 @@
 		</property>
 		<property name="URL">
 			"jdbc:hsqldb:file:"
-				+ @org.seasar.framework.util.ResourceUtil@getBuildDir('app.dicon').getCanonicalPath()
-				+ "/data/test"
+				+ application.getRealPath("/WEB-INF/data")
+				+ "/test"
 		</property>
 		<property name="user">"sa"</property>
 		<property name="password">""</property>
