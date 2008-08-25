@@ -11,6 +11,6 @@ public class RedirectAction {
 
 	@Execute(validator = false, redirect = true)
 	public String showGoogle() {
-		return "http://www.google.com";
+		return "http://www.google.co.jp";
 	}
 }

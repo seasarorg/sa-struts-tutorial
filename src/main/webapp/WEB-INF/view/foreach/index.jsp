@@ -14,7 +14,7 @@
 <tr style="background-color:${s.index % 2 == 0 ? 'pink' : 'yellow'}">
 <td>${f:h(m.id)}</td>
 <td>${f:h(m.name)}</td>
-<td><a href="result/${f:u(m.id)}">結果ページへ</a></td>
+<td><s:link href="result/${m.id}">結果ページへ</s:link></td>
 </tr>
 </c:forEach>
 </table>

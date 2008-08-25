@@ -9,9 +9,6 @@
 <h1>Tutorial: Upload</h1>
 
 <html:errors/>
-<html:messages id="m" message="true">
-${f:h(m)}<br />
-</html:messages>
 
 <s:form enctype="multipart/form-data">
 <input type="file" name="formFile" /><br />

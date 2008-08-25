@@ -15,7 +15,7 @@
 <td>${f:h(m.name)}</td>
 <td>
 <s:form>
-<input type="hidden" name="id" value="${f:h(m.id)}"/>
+<input type="hidden" name="id" value="${m.id}"/>
 <input type="submit" name="result" value="結果ページへ"/>
 </s:form>
 </td>

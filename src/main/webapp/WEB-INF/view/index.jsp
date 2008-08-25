@@ -52,7 +52,6 @@ Tomcatの設定はお済みですか?<br />
 <li><a href="protect/">保護されたページ</a></li>
 <li><a href="logout/">ログアウト</a></li>
 <li><a href="ajax/">Ajax</a></li>
-<li><a href="employee/">データベースを使ったサンプル</a></li>
 </ul>
 </body>
 </html>

@@ -11,7 +11,7 @@
 <html:errors/>
 <s:form>
 <html:textarea property="textarea"/><br />
-${f:br(f:h(textarea))}<br />
+${f:br(f:nbsp(f:h(textarea)))}<br />
 <input type="submit" name="submit" value="サブミット"/>
 </s:form>
 </body>
