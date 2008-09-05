@@ -45,7 +45,7 @@ Tomcatの設定はお済みですか?<br />
 <li><a href="textarea/">テキストエリア</a></li>
 <li><a href="condition/1">条件(id=1)</a></li>
 <li><a href="condition/2">条件(id=2)</a></li>
-<li><a href="token/">トークンチェック</a></li>
+<li><a href="token/">ボタンの2度押し対策</a></li>
 <li><a href="upload/">ファイルアップロード</a></li>
 <li><a href="download/">ファイルダウンロード</a></li>
 <li><a href="tiles/">レイアウト</a></li>
