@@ -32,9 +32,9 @@
 	<classpathentry kind="lib" path="lib/geronimo-servlet_2.4_spec-1.0.jar"/>
 	<classpathentry kind="lib" path="lib/junit-3.8.2.jar" sourcepath="libsrc/junit-3.8.2-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/commons-io-1.3.2.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/commons-io-1.3.2-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/sa-struts-1.0.4-sp1.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/sa-struts-1.0.4-sp1-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-extension-2.4.28.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-extension-2.4.28-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-framework-2.4.28.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-framework-2.4.28-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-tiger-2.4.28.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-tiger-2.4.28-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-extension-2.4.29.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-extension-2.4.29-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-framework-2.4.29.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-framework-2.4.29-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-tiger-2.4.29.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-tiger-2.4.29-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/sa-struts-1.0.4-sp2.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/sa-struts-1.0.4-sp2-sources.jar"/>
 	<classpathentry kind="output" path="target/test-classes"/>
 </classpath>
