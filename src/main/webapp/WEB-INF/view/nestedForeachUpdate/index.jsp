@@ -17,12 +17,12 @@
         <td>
             <input type="text"
                 name="mapItemsItems[${s.index}][${s2.index}].id"
-                value="${m.id}"/>
+                value="${f:h(m.id)}"/>
         </td>
         <td>
             <input type="text"
                 name="mapItemsItems[${s.index}][${s2.index}].name"
-                value="${m.name}"/>
+                value="${f:h(m.name)}"/>
         </td>
     </c:forEach>
     </tr>
