@@ -16,12 +16,8 @@
 <tr><td>aaa</td><td><html:text property="aaa"/></td></tr>
 <tr><td>bbb</td><td><html:text property="bbb"/></td></tr>
 </table>
-<input type="submit" name="submit" value="aaaが必須"
-    onclick="forms[0].name='clientValidatorActionForm_submit';
-        return validateClientValidatorActionForm_submit(forms[0]);"/>
-<input type="submit" name="submit2" value="bbbが必須"
-    onclick="forms[0].name='clientValidatorActionForm_submit2';
-        return validateClientValidatorActionForm_submit2(forms[0]);"/>
+<s:submit property="submit" clientValidate="true">aaaが必須</s:submit>
+<s:submit property="submit2" clientValidate="true">bbbが必須</s:submit>
 </s:form>
 </body>
 </html>
