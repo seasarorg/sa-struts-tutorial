@@ -10,6 +10,6 @@
 <h1>Tutorial: Ajax</h1>
 <span id="message"></span><br />
 <input type="button" value="hello"
-    onclick="$('#message').load('hello');"/>
+    onclick="$('#message').load('${f:url('hello')}');"/>
 </body>
 </html>
