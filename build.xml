@@ -1,6 +1,6 @@
 <project name="sa-struts-tutorial" default="copy" basedir=".">
-	<property name="s2ver" value="2.4.31"/>
-	<property name="ver" value="1.0.4-sp2"/>
+	<property name="s2ver" value="2.4.33"/>
+	<property name="ver" value="1.0.4-sp3"/>
 	<target name="copy">
 		<copy todir="src/main/webapp/WEB-INF/lib" file="../s2jdbc-tutorial/lib/s2-framework-${s2ver}.jar"/>
 		<copy todir="src/main/webapp/WEB-INF/lib" file="../s2jdbc-tutorial/lib/s2-extension-${s2ver}.jar"/>
@@ -21,7 +21,6 @@
 				<zipfileset prefix="sa-struts-tutorial" dir=".">
 					<exclude name="target/**"/>
 					<exclude name="work/**"/>
-					<exclude name="**/.settings/**"/>
 					<exclude name="build.xml"/>
 					<exclude name="**/.DS_Store"/>
 				</zipfileset>
