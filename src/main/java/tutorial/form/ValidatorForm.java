@@ -51,7 +51,7 @@ public class ValidatorForm {
     public String doubleText;
 
     @Required
-    @DateType
+    @DateType(datePattern = "yyyy/MM/dd")
     public String dateText;
 
     @Required
