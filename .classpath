@@ -35,7 +35,7 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-extension-2.4.33.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-extension-2.4.33-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-framework-2.4.33.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-framework-2.4.33-sources.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/s2-tiger-2.4.33.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/s2-tiger-2.4.33-sources.jar"/>
-	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/sa-struts-1.0.4-sp3.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/sa-struts-1.0.4-sp3-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/sa-struts-1.0.4-sp4.jar" sourcepath="src/main/webapp/WEB-INF/libsrc/sa-struts-1.0.4-sp4-sources.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/servlet-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/jasper-runtime.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/common/lib/jsp-api.jar"/>

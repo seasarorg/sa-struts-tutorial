@@ -26,105 +26,105 @@ import org.seasar.struts.annotation.Validwhen;
 
 public class ValidatorForm {
 
-	@Required
-	@ByteType
-	public String byteText;
+    @Required
+    @ByteType
+    public String byteText;
 
-	@Required
-	@ShortType
-	public String shortText;
+    @Required
+    @ShortType
+    public String shortText;
 
-	@Required
-	@IntegerType
-	public String integerText;
+    @Required
+    @IntegerType
+    public String integerText;
 
-	@Required
-	@LongType
-	public String longText;
+    @Required
+    @LongType
+    public String longText;
 
-	@Required
-	@FloatType
-	public String floatText;
+    @Required
+    @FloatType
+    public String floatText;
 
-	@Required
-	@DoubleType
-	public String doubleText;
+    @Required
+    @DoubleType
+    public String doubleText;
 
-	@Required
-	@DateType
-	public String dateText;
+    @Required
+    @DateType
+    public String dateText;
 
-	@Required
-	@CreditCardType
-	public String creditcardText;
+    @Required
+    @CreditCardType
+    public String creditcardText;
 
-	@Required
-	@EmailType
-	public String emailText;
+    @Required
+    @EmailType
+    public String emailText;
 
-	@Required
-	@UrlType
-	public String urlText;
+    @Required
+    @UrlType
+    public String urlText;
 
-	@Required
-	@IntRange(min = 3, max = 10)
-	public String intRangeText;
+    @Required
+    @IntRange(min = 3, max = 10)
+    public String intRangeText;
 
-	@Required
-	@LongRange(min = 3, max = 10)
-	public String longRangeText;
+    @Required
+    @LongRange(min = 3, max = 10)
+    public String longRangeText;
 
-	@Required
-	@FloatRange(min = "3.0", max = "10.0")
-	public String floatRangeText;
+    @Required
+    @FloatRange(min = "3.0", max = "10.0")
+    public String floatRangeText;
 
-	@Required
-	@DoubleRange(min = "3.0", max = "10.0")
-	public String doubleRangeText;
+    @Required
+    @DoubleRange(min = "3.0", max = "10.0")
+    public String doubleRangeText;
 
-	@Required
-	@Minlength(minlength = 3)
-	public String minlengthText;
+    @Required
+    @Minlength(minlength = 3)
+    public String minlengthText;
 
-	@Required
-	@Maxlength(maxlength = 10)
-	public String maxlengthText;
+    @Required
+    @Maxlength(maxlength = 10)
+    public String maxlengthText;
 
-	@Required
-	@Minbytelength(minbytelength = 3)
-	public String minbytelengthText;
+    @Required
+    @Minbytelength(minbytelength = 3)
+    public String minbytelengthText;
 
-	@Required
-	@Maxbytelength(maxbytelength = 10)
-	public String maxbytelengthText;
+    @Required
+    @Maxbytelength(maxbytelength = 10)
+    public String maxbytelengthText;
 
-	@Required
-	@Mask(mask = "\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d", msg = @Msg(key = "errors.phone"), args = @Arg(key = "99-9999-9999", resource = false, position = 1))
-	public String phoneText;
+    @Required
+    @Mask(mask = "\\d\\d-\\d\\d\\d\\d-\\d\\d\\d\\d", msg = @Msg(key = "errors.phone"), args = @Arg(key = "99-9999-9999", resource = false, position = 1))
+    public String phoneText;
 
-	public String validwhen1Text;
+    public String validwhen1Text;
 
-	@Validwhen(test = "((validwhen1Text == null) or (*this* != null))", msg = @Msg(key = "errors.required.other"), args = @Arg(key = "validwhen1Text", resource = false, position = 1))
-	public String validwhen2Text;
+    @Validwhen(test = "((validwhen1Text == null) or (*this* != null))", msg = @Msg(key = "errors.required.other"), args = @Arg(key = "validwhen1Text", resource = false, position = 1))
+    public String validwhen2Text;
 
-	public void initialize() {
-		byteText = "1";
-		shortText = "1";
-		integerText = "1";
-		longText = "1";
-		floatText = "1.0";
-		doubleText = "1.0";
-		dateText = "2008/1/1";
-		emailText = "higayasuo@gmail.com";
-		urlText = "http://d.hatena.ne.jp/higayasuo";
-		intRangeText = "7";
-		longRangeText = "7";
-		floatRangeText = "7.0";
-		doubleRangeText = "7.0";
-		minlengthText = "123";
-		maxlengthText = "1234567890";
-		minbytelengthText = "ああ";
-		maxbytelengthText = "あああああ";
-		phoneText = "03-9999-9999";
-	}
+    public void initialize() {
+        byteText = "1";
+        shortText = "1";
+        integerText = "1";
+        longText = "1";
+        floatText = "1.0";
+        doubleText = "1.0";
+        dateText = "2008/1/1";
+        emailText = "higayasuo@gmail.com";
+        urlText = "http://d.hatena.ne.jp/higayasuo";
+        intRangeText = "7";
+        longRangeText = "7";
+        floatRangeText = "7.0";
+        doubleRangeText = "7.0";
+        minlengthText = "123";
+        maxlengthText = "1234567890";
+        minbytelengthText = "aaa";
+        maxbytelengthText = "aaaaaaaaaa";
+        phoneText = "03-9999-9999";
+    }
 }
