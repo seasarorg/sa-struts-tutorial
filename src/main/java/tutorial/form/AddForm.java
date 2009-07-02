@@ -1,15 +1,20 @@
 package tutorial.form;
 
+import java.io.Serializable;
+
 import org.seasar.struts.annotation.IntegerType;
 import org.seasar.struts.annotation.Required;
 
-public class AddForm {
+//@Component(instance = InstanceType.SESSION)
+public class AddForm implements Serializable {
 
-	@Required
-	@IntegerType
-	public String arg1;
+    private static final long serialVersionUID = 1L;
 
-	@Required
-	@IntegerType
-	public String arg2;
+    @Required
+    @IntegerType
+    public String arg1;
+
+    @Required
+    @IntegerType
+    public String arg2;
 }
