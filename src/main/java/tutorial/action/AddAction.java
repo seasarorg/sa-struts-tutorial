@@ -4,7 +4,6 @@ import javax.annotation.Resource;
 
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
-import org.seasar.struts.exception.ActionMessagesException;
 
 import tutorial.form.AddForm;
 
@@ -21,10 +20,9 @@ public class AddAction {
         return "index.jsp";
     }
 
-    @Execute(input = "index.jsp", removeActionForm = true)
+    @Execute(input = "index.jsp")
     public String submit() {
         result = Integer.valueOf(addForm.arg1) + Integer.valueOf(addForm.arg2);
-        throw new ActionMessagesException("errors.required", "hoge");
-        // return "index.jsp";
+        return "index.jsp";
     }
 }
