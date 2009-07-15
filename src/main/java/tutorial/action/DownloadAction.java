@@ -11,23 +11,23 @@ import org.seasar.struts.util.ResponseUtil;
 
 public class DownloadAction {
 
-	@Resource
-	protected HttpServletResponse response;
+    @Resource
+    protected HttpServletResponse response;
 
-	@Execute(validator = false)
-	public String index() {
-		return "index.jsp";
-	}
+    @Execute(validator = false)
+    public String index() {
+        return "index.jsp";
+    }
 
-	@Execute(validator = false)
-	public String download() {
-		try {
-			ResponseUtil.download(new String(
-				"サンプル.txt".getBytes("Shift_JIS"),
-				"ISO-8859-1"), "こんにちは".getBytes());
-		} catch (IOException e) {
-			throw new IORuntimeException(e);
-		}
-		return null;
-	}
+    @Execute(validator = false)
+    public String download() {
+        try {
+            ResponseUtil.download(new String(
+                "サンプル.txt".getBytes("Shift_JIS"),
+                "ISO-8859-1"), "こんにちは".getBytes("Shift_JIS"));
+        } catch (IOException e) {
+            throw new IORuntimeException(e);
+        }
+        return null;
+    }
 }
