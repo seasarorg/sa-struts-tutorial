@@ -1,5 +1,5 @@
 <project name="sa-struts-tutorial" default="copy" basedir=".">
-	<property name="s2ver" value="2.4.38"/>
+	<property name="s2ver" value="2.4.39"/>
 	<property name="ver" value="1.0.4-sp6"/>
 	<target name="copy">
 		<copy todir="src/main/webapp/WEB-INF/lib" file="../s2jdbc-tutorial/lib/s2-framework-${s2ver}.jar"/>
